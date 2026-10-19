@@ -320,34 +320,34 @@
   "setup.appearance.dock.position.right": {
     "label": "Dock sa Kanan"
   },
-  "setup.appearance.window-gaps": {
+  "setup.appearance.windows.gaps": {
     "label": "Pagitan ng Bintana"
   },
-  "setup.appearance.window-corners": {
+  "setup.appearance.windows.corners": {
     "label": "Sulok ng Bintana"
   },
-  "setup.appearance.window-corners.theme": {
+  "setup.appearance.windows.corners.theme": {
     "label": "Sulok ng Tema"
   },
-  "setup.appearance.window-corners.sharp": {
+  "setup.appearance.windows.corners.sharp": {
     "label": "Matalim na Sulok"
   },
-  "setup.appearance.window-corners.rounded": {
+  "setup.appearance.windows.corners.rounded": {
     "label": "Bilugang Sulok"
   },
-  "setup.appearance.window-transparency": {
+  "setup.appearance.windows.transparency": {
     "label": "Opacity ng Bintana"
   },
-  "setup.appearance.window-transparency.opaque": {
+  "setup.appearance.windows.transparency.opaque": {
     "label": "Opaque na Bintana"
   },
-  "setup.appearance.window-transparency.transparent": {
+  "setup.appearance.windows.transparency.transparent": {
     "label": "Transparent na Bintana"
   },
-  "setup.appearance.window-transparency.glassy": {
+  "setup.appearance.windows.transparency.glassy": {
     "label": "Mala-salaming Bintana"
   },
-  "setup.appearance.one-window-ratio": {
+  "setup.appearance.windows.one-window-ratio": {
     "label": "Ratio ng 1 Bintana"
   },
   "setup.appearance.workspace-layout": {

@@ -320,34 +320,34 @@
   "setup.appearance.dock.position.right": {
     "label": "Dock vpravo"
   },
-  "setup.appearance.window-gaps": {
+  "setup.appearance.windows.gaps": {
     "label": "Mezery oken"
   },
-  "setup.appearance.window-corners": {
+  "setup.appearance.windows.corners": {
     "label": "Rohy oken"
   },
-  "setup.appearance.window-corners.theme": {
+  "setup.appearance.windows.corners.theme": {
     "label": "Rohy podle motivu"
   },
-  "setup.appearance.window-corners.sharp": {
+  "setup.appearance.windows.corners.sharp": {
     "label": "Ostré rohy"
   },
-  "setup.appearance.window-corners.rounded": {
+  "setup.appearance.windows.corners.rounded": {
     "label": "Zaoblené rohy"
   },
-  "setup.appearance.window-transparency": {
+  "setup.appearance.windows.transparency": {
     "label": "Průhlednost oken"
   },
-  "setup.appearance.window-transparency.opaque": {
+  "setup.appearance.windows.transparency.opaque": {
     "label": "Neprůhledná okna"
   },
-  "setup.appearance.window-transparency.transparent": {
+  "setup.appearance.windows.transparency.transparent": {
     "label": "Průhledná okna"
   },
-  "setup.appearance.window-transparency.glassy": {
+  "setup.appearance.windows.transparency.glassy": {
     "label": "Skleněná okna"
   },
-  "setup.appearance.one-window-ratio": {
+  "setup.appearance.windows.one-window-ratio": {
     "label": "Poměr pro 1 okno"
   },
   "setup.appearance.workspace-layout": {

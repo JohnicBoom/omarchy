@@ -320,34 +320,34 @@
   "setup.appearance.dock.position.right": {
     "label": "Jobb dokk"
   },
-  "setup.appearance.window-gaps": {
+  "setup.appearance.windows.gaps": {
     "label": "Ablakközök"
   },
-  "setup.appearance.window-corners": {
+  "setup.appearance.windows.corners": {
     "label": "Ablaksarkok"
   },
-  "setup.appearance.window-corners.theme": {
+  "setup.appearance.windows.corners.theme": {
     "label": "Témasarkok"
   },
-  "setup.appearance.window-corners.sharp": {
+  "setup.appearance.windows.corners.sharp": {
     "label": "Éles sarkok"
   },
-  "setup.appearance.window-corners.rounded": {
+  "setup.appearance.windows.corners.rounded": {
     "label": "Lekerekített sarkok"
   },
-  "setup.appearance.window-transparency": {
+  "setup.appearance.windows.transparency": {
     "label": "Ablak átlátszósága"
   },
-  "setup.appearance.window-transparency.opaque": {
+  "setup.appearance.windows.transparency.opaque": {
     "label": "Átlátszatlan ablakok"
   },
-  "setup.appearance.window-transparency.transparent": {
+  "setup.appearance.windows.transparency.transparent": {
     "label": "Átlátszó ablakok"
   },
-  "setup.appearance.window-transparency.glassy": {
+  "setup.appearance.windows.transparency.glassy": {
     "label": "Üveges ablakok"
   },
-  "setup.appearance.one-window-ratio": {
+  "setup.appearance.windows.one-window-ratio": {
     "label": "1 ablak aránya"
   },
   "setup.appearance.workspace-layout": {

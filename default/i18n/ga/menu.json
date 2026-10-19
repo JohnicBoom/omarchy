@@ -320,34 +320,34 @@
   "setup.appearance.dock.position.right": {
     "label": "Duga ar dheis"
   },
-  "setup.appearance.window-gaps": {
+  "setup.appearance.windows.gaps": {
     "label": "Bearnaí fuinneog"
   },
-  "setup.appearance.window-corners": {
+  "setup.appearance.windows.corners": {
     "label": "Cúinní fuinneog"
   },
-  "setup.appearance.window-corners.theme": {
+  "setup.appearance.windows.corners.theme": {
     "label": "Cúinní téama"
   },
-  "setup.appearance.window-corners.sharp": {
+  "setup.appearance.windows.corners.sharp": {
     "label": "Cúinní géara"
   },
-  "setup.appearance.window-corners.rounded": {
+  "setup.appearance.windows.corners.rounded": {
     "label": "Cúinní cruinne"
   },
-  "setup.appearance.window-transparency": {
+  "setup.appearance.windows.transparency": {
     "label": "Teimhneacht fuinneog"
   },
-  "setup.appearance.window-transparency.opaque": {
+  "setup.appearance.windows.transparency.opaque": {
     "label": "Fuinneoga teimhneacha"
   },
-  "setup.appearance.window-transparency.transparent": {
+  "setup.appearance.windows.transparency.transparent": {
     "label": "Fuinneoga trédhearcacha"
   },
-  "setup.appearance.window-transparency.glassy": {
+  "setup.appearance.windows.transparency.glassy": {
     "label": "Fuinneoga gloineacha"
   },
-  "setup.appearance.one-window-ratio": {
+  "setup.appearance.windows.one-window-ratio": {
     "label": "Cóimheas 1-fhuinneog"
   },
   "setup.appearance.workspace-layout": {

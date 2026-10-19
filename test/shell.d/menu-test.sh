@@ -525,26 +525,32 @@ assertDeepEqual(
   'menu names each position after the bar'
 )
 assertDeepEqual(
-  defaultItems.filter(item => item.parent === 'setup.appearance.window-corners').map(item => [item.label, item.action]),
+  defaultItems.filter(item => item.parent === 'setup.appearance.windows.corners').map(item => [item.label, item.action]),
   [['Theme Corners', 'omarchy-hyprland-corners theme'], ['Sharp Corners', 'omarchy-hyprland-corners sharp'], ['Rounded Corners', 'omarchy-hyprland-corners rounded']],
-  'menu picks window corners from Appearance > Window Corners'
+  'menu picks window corners from Appearance > Windows > Window Corners'
 )
 assertDeepEqual(
-  defaultItems.filter(item => item.parent === 'setup.appearance.window-transparency').map(item => [item.label, item.action]),
+  defaultItems.filter(item => item.parent === 'setup.appearance.windows.transparency').map(item => [item.label, item.action]),
   [
     ['Opaque Windows', 'omarchy-hyprland-window-transparency opaque'],
     ['Transparent Windows', 'omarchy-hyprland-window-transparency transparent'],
     ['Glassy Windows', 'omarchy-hyprland-window-transparency glassy']
   ],
-  'menu picks window transparency from Appearance > Window Opacity'
+  'menu picks window transparency from Appearance > Windows > Window Opacity'
 )
 const triggerIds = triggerItems.map(item => item.id)
-const appearanceLabels = ['Animations', 'Menu Bar', 'Dock', 'Window Gaps', 'Window Corners', 'Window Opacity', '1-Window Ratio', 'Workspace Layout', 'Herdr Theme Sync']
+const windowLabels = ['Window Gaps', 'Window Corners', 'Window Opacity', '1-Window Ratio']
+const appearanceLabels = ['Animations', 'Menu Bar', 'Dock', 'Windows', 'Workspace Layout', 'Herdr Theme Sync', ...windowLabels]
 assertEqual(triggerIds[0], 'trigger.toggle', 'menu lists Toggle first under Trigger')
 assertDeepEqual(
   defaultItems.filter(item => item.parent === 'setup.appearance').map(item => item.label),
-  appearanceLabels,
+  appearanceLabels.slice(0, 6),
   'menu gathers the look of the desktop under Setup > Appearance'
+)
+assertDeepEqual(
+  defaultItems.filter(item => item.parent === 'setup.appearance.windows').map(item => item.label),
+  windowLabels,
+  'menu gathers the window looks under Setup > Appearance > Windows'
 )
 assert(
   !defaultItems.some(item => item.parent === 'trigger.toggle' && appearanceLabels.includes(item.label)),
