@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Pokreni"
   },
-  "style": {
-    "label": "Stil"
-  },
   "setup": {
     "label": "Postavke"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Zajednica"
-  },
-  "trigger.appearance": {
-    "label": "Izgled"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animacije"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Traka izbornika"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Sakrij traku"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Prikaži traku"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Položaj trake"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Pozadina trake"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Neprozirna traka"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Staklena traka"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Prozirna traka"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Pokazatelji trake"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Postotak baterije"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Sat"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Nedjelja 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Nedjelja 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Nedjelja 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Nedjelja 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Ned 3. svi 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Ned 3. svi 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3. svi T18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03. svi T18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Gornja traka"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Donja traka"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Lijeva traka"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Desna traka"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dok"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Auto-sakrij dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Uvijek vidljiv dock"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Položaj docka"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Gornji dock"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Donji dock"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Lijevi dock"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Desni dock"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Razmaci prozora"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Kutovi prozora"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Kutovi teme"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Oštri kutovi"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Zaobljeni kutovi"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Neprozirnost prozora"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Neprozirni prozori"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Prozirni prozori"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Stakleni prozori"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Omjer 1 prozora"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Raspored radnog prostora",
-    "title": "Zadani raspored radnog prostora"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Popločavanje"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Pomicanje"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Plutanje"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr sinkronizacija teme"
   },
   "trigger.toggle": {
     "label": "Prebaci"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Test brzine diska"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Izgled"
+  },
+  "setup.appearance.animations": {
+    "label": "Animacije"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Traka izbornika"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Sakrij traku"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Prikaži traku"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Položaj trake"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Pozadina trake"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Neprozirna traka"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Staklena traka"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Prozirna traka"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Pokazatelji trake"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Postotak baterije"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Sat"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Nedjelja 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Nedjelja 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Nedjelja 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Nedjelja 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Ned 3. svi 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Ned 3. svi 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3. svi T18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03. svi T18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Gornja traka"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Donja traka"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Lijeva traka"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Desna traka"
+  },
+  "setup.appearance.dock": {
+    "label": "Dok"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Auto-sakrij dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Uvijek vidljiv dock"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Položaj docka"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Gornji dock"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Donji dock"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Lijevi dock"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Desni dock"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Razmaci prozora"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Kutovi prozora"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Kutovi teme"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Oštri kutovi"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Zaobljeni kutovi"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Neprozirnost prozora"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Neprozirni prozori"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Prozirni prozori"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Stakleni prozori"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Omjer 1 prozora"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Raspored radnog prostora",
+    "title": "Zadani raspored radnog prostora"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Popločavanje"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Pomicanje"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Plutanje"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr sinkronizacija teme"
+  },
+  "setup.style": {
+    "label": "Stil"
+  },
+  "setup.style.theme": {
     "label": "Tema"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Pozadina"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Otključaj"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Font"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Čuvar zaslona"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "O programu"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Uredi tekst"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Postavi sa slike"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Vrati zadano"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Uredi tekst"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Postavi sa slike"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Vrati zadano"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Ponovno pokreni u izbornik pokretanja"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

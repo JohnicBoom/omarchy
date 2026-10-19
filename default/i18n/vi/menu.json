@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Kích hoạt"
   },
-  "style": {
-    "label": "Phong cách"
-  },
   "setup": {
     "label": "Thiết lập"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Cộng đồng"
-  },
-  "trigger.appearance": {
-    "label": "Giao diện"
-  },
-  "trigger.appearance.animations": {
-    "label": "Hiệu ứng"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Thanh menu"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Ẩn thanh"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Hiện thanh"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Vị trí thanh"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Nền thanh"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Thanh đặc"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Thanh kính"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Thanh trong"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Chỉ báo thanh"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Phần trăm pin"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Đồng hồ"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Chủ nhật 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Chủ nhật 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Chủ nhật 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Chủ nhật 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "CN 3 tháng 5 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "CN 3 tháng 5 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 tháng 5 W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 tháng 5 W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Thanh trên"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Thanh dưới"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Thanh trái"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Thanh phải"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Tự ẩn Dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock luôn hiện"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Vị trí Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock trên"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock dưới"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock trái"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock phải"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Khoảng cách cửa sổ"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Góc cửa sổ"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Góc theo chủ đề"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Góc sắc"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Góc bo tròn"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Độ mờ cửa sổ"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Cửa sổ đặc"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Cửa sổ trong suốt"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Cửa sổ kính"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Tỷ lệ 1 cửa sổ"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Bố cục không gian làm việc",
-    "title": "Bố cục không gian làm việc mặc định"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Xếp ô"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Cuộn"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Nổi"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Đồng bộ chủ đề Herdr"
   },
   "trigger.toggle": {
     "label": "Bật/tắt"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Kiểm tra tốc độ đĩa"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Giao diện"
+  },
+  "setup.appearance.animations": {
+    "label": "Hiệu ứng"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Thanh menu"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Ẩn thanh"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Hiện thanh"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Vị trí thanh"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Nền thanh"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Thanh đặc"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Thanh kính"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Thanh trong"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Chỉ báo thanh"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Phần trăm pin"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Đồng hồ"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Chủ nhật 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Chủ nhật 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Chủ nhật 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Chủ nhật 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "CN 3 tháng 5 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "CN 3 tháng 5 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 tháng 5 W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 tháng 5 W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Thanh trên"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Thanh dưới"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Thanh trái"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Thanh phải"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Tự ẩn Dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock luôn hiện"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Vị trí Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock trên"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock dưới"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock trái"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock phải"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Khoảng cách cửa sổ"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Góc cửa sổ"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Góc theo chủ đề"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Góc sắc"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Góc bo tròn"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Độ mờ cửa sổ"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Cửa sổ đặc"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Cửa sổ trong suốt"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Cửa sổ kính"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Tỷ lệ 1 cửa sổ"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Bố cục không gian làm việc",
+    "title": "Bố cục không gian làm việc mặc định"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Xếp ô"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Cuộn"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Nổi"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Đồng bộ chủ đề Herdr"
+  },
+  "setup.style": {
+    "label": "Phong cách"
+  },
+  "setup.style.theme": {
     "label": "Chủ đề"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Hình nền"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Mở khóa"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Phông chữ"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Bảo vệ màn hình"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Giới thiệu"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Sửa văn bản"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Đặt từ hình ảnh"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Khôi phục mặc định"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Sửa văn bản"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Đặt từ hình ảnh"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Khôi phục mặc định"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Khởi động lại vào Boot Menu"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

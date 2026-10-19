@@ -11,9 +11,6 @@
   "trigger": {
     "label": "הפעלה"
   },
-  "style": {
-    "label": "סגנון"
-  },
   "setup": {
     "label": "הגדרה"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "קהילה"
-  },
-  "trigger.appearance": {
-    "label": "מראה"
-  },
-  "trigger.appearance.animations": {
-    "label": "הנפשות"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "שורת תפריט"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "הסתרת שורה"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "הצגת שורה"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "מיקום שורה"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "רקע שורה"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "שורה אטומה"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "שורה זכוכיתית"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "שורה שקופה"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "מחווני שורה"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "אחוז סוללה"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "שעון"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "ראשון 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "ראשון 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "ראשון 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "ראשון 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "יום א' 3 במאי 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "יום א' 3 במאי 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 במאי שבוע 18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 במאי שבוע 18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "שורה עליונה"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "שורה תחתונה"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "שורה שמאלית"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "שורה ימנית"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "הסתרת Dock אוטומטית"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock תמיד מוצג"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "מיקום Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock עליון"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock תחתון"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock שמאלי"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock ימני"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "מרווחי חלונות"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "פינות חלון"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "פינות לפי ערכה"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "פינות חדות"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "פינות מעוגלות"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "אטימות חלון"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "חלונות אטומים"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "חלונות שקופים"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "חלונות זכוכיתיים"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "יחס חלון אחד"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "פריסת סביבת עבודה",
-    "title": "פריסת סביבת עבודה כברירת מחדל"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "ריצוף"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "גלילה"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "צף"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "סנכרון ערכה של Herdr"
   },
   "trigger.toggle": {
     "label": "החלפה"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "בדיקת מהירות דיסק"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "מראה"
+  },
+  "setup.appearance.animations": {
+    "label": "הנפשות"
+  },
+  "setup.appearance.top-bar": {
+    "label": "שורת תפריט"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "הסתרת שורה"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "הצגת שורה"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "מיקום שורה"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "רקע שורה"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "שורה אטומה"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "שורה זכוכיתית"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "שורה שקופה"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "מחווני שורה"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "אחוז סוללה"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "שעון"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "ראשון 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "ראשון 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "ראשון 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "ראשון 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "יום א' 3 במאי 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "יום א' 3 במאי 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 במאי שבוע 18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 במאי שבוע 18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "שורה עליונה"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "שורה תחתונה"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "שורה שמאלית"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "שורה ימנית"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "הסתרת Dock אוטומטית"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock תמיד מוצג"
+  },
+  "setup.appearance.dock.position": {
+    "label": "מיקום Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock עליון"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock תחתון"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock שמאלי"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock ימני"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "מרווחי חלונות"
+  },
+  "setup.appearance.window-corners": {
+    "label": "פינות חלון"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "פינות לפי ערכה"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "פינות חדות"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "פינות מעוגלות"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "אטימות חלון"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "חלונות אטומים"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "חלונות שקופים"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "חלונות זכוכיתיים"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "יחס חלון אחד"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "פריסת סביבת עבודה",
+    "title": "פריסת סביבת עבודה כברירת מחדל"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "ריצוף"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "גלילה"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "צף"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "סנכרון ערכה של Herdr"
+  },
+  "setup.style": {
+    "label": "סגנון"
+  },
+  "setup.style.theme": {
     "label": "ערכת נושא"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "רקע"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "ביטול נעילה"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "גופן"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "שומר מסך"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "אודות"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "עריכת טקסט"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "הגדרה מתמונה"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "שחזור ברירת מחדל"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "עריכת טקסט"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "הגדרה מתמונה"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "שחזור ברירת מחדל"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "הפעל מחדש לתפריט האתחול"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

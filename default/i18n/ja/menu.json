@@ -11,9 +11,6 @@
   "trigger": {
     "label": "実行"
   },
-  "style": {
-    "label": "スタイル"
-  },
   "setup": {
     "label": "設定"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "コミュニティ"
-  },
-  "trigger.appearance": {
-    "label": "外観"
-  },
-  "trigger.appearance.animations": {
-    "label": "アニメーション"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "メニューバー"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "バーを隠す"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "バーを表示"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "バーの位置"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "バーの背景"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "不透明バー"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "ガラス質バー"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "透明バー"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "バー表示"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "残量表示（%）"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "時計"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "日曜日 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "日曜日 午後2:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "日曜日 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "日曜日 午後2:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "午後2:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "5月3日（日）14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "5月3日（日）午後2:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "2026年5月3日 第18週"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 午後"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "5月3日 第18週 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "上部バー"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "下部バー"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "左バー"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "右バー"
-  },
-  "trigger.appearance.dock": {
-    "label": "ドック"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "ドックを自動で隠す"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "ドックを常に表示"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "ドックの位置"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "上部ドック"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "下部ドック"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "左ドック"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "右ドック"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "ウィンドウ間隔"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "ウィンドウの角"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "テーマの角"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "シャープな角"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "丸い角"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "ウィンドウ不透明度"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "不透明ウィンドウ"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "透明ウィンドウ"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "ガラス質ウィンドウ"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "単一ウィンドウ比率"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "ワークスペース配置",
-    "title": "既定のワークスペース配置"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "タイル型"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "スクロール型"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "フロート型"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdrテーマ同期"
   },
   "trigger.toggle": {
     "label": "切り替え"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "ディスク速度テスト"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "外観"
+  },
+  "setup.appearance.animations": {
+    "label": "アニメーション"
+  },
+  "setup.appearance.top-bar": {
+    "label": "メニューバー"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "バーを隠す"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "バーを表示"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "バーの位置"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "バーの背景"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "不透明バー"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "ガラス質バー"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "透明バー"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "バー表示"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "残量表示（%）"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "時計"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "日曜日 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "日曜日 午後2:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "日曜日 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "日曜日 午後2:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "午後2:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "5月3日（日）14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "5月3日（日）午後2:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "2026年5月3日 第18週"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 午後"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "5月3日 第18週 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "上部バー"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "下部バー"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "左バー"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "右バー"
+  },
+  "setup.appearance.dock": {
+    "label": "ドック"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "ドックを自動で隠す"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "ドックを常に表示"
+  },
+  "setup.appearance.dock.position": {
+    "label": "ドックの位置"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "上部ドック"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "下部ドック"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "左ドック"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "右ドック"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "ウィンドウ間隔"
+  },
+  "setup.appearance.window-corners": {
+    "label": "ウィンドウの角"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "テーマの角"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "シャープな角"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "丸い角"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "ウィンドウ不透明度"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "不透明ウィンドウ"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "透明ウィンドウ"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "ガラス質ウィンドウ"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "単一ウィンドウ比率"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "ワークスペース配置",
+    "title": "既定のワークスペース配置"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "タイル型"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "スクロール型"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "フロート型"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdrテーマ同期"
+  },
+  "setup.style": {
+    "label": "スタイル"
+  },
+  "setup.style.theme": {
     "label": "テーマ"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "壁紙"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "ロック画面"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "フォント"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "スクリーンセーバー"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "情報"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "テキストを編集"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "画像から設定"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "デフォルトに戻す"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "テキストを編集"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "画像から設定"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "デフォルトに戻す"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "ブートメニューで再起動"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

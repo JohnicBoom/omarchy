@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Activeren"
   },
-  "style": {
-    "label": "Stijl"
-  },
   "setup": {
     "label": "Instellen"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Gemeenschap"
-  },
-  "trigger.appearance": {
-    "label": "Weergave"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animaties"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Menubalk"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Balk verbergen"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Balk tonen"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Balkpositie"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Balkachtergrond"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Ondoorzichtige balk"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Glazen balk"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Doorzichtige balk"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Balkindicatoren"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Batterijpercentage"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Klok"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Zondag 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Zondag 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Zondag 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Zondag 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Zo 3 mei 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Zo 3 mei 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 mei W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 mei W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Balk boven"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Balk onder"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Balk links"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Balk rechts"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Dock auto-verbergen"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock altijd zichtbaar"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Dockpositie"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock boven"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock onder"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock links"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock rechts"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Vensterafstand"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Vensterhoeken"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Themahoeken"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Scherpe hoeken"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Ronde hoeken"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Vensterdekking"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Ondoorzichtige vensters"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Doorzichtige vensters"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Glazen vensters"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "1-venster verhouding"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Werkbladindeling",
-    "title": "Standaard werkbladindeling"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Tegelen"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Scrollen"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Zwevend"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr-themasync"
   },
   "trigger.toggle": {
     "label": "Schakelen"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Schijfsnelheidstest"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Weergave"
+  },
+  "setup.appearance.animations": {
+    "label": "Animaties"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Menubalk"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Balk verbergen"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Balk tonen"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Balkpositie"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Balkachtergrond"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Ondoorzichtige balk"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Glazen balk"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Doorzichtige balk"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Balkindicatoren"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Batterijpercentage"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Klok"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Zondag 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Zondag 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Zondag 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Zondag 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Zo 3 mei 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Zo 3 mei 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 mei W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 mei W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Balk boven"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Balk onder"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Balk links"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Balk rechts"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Dock auto-verbergen"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock altijd zichtbaar"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Dockpositie"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock boven"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock onder"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock links"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock rechts"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Vensterafstand"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Vensterhoeken"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Themahoeken"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Scherpe hoeken"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Ronde hoeken"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Vensterdekking"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Ondoorzichtige vensters"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Doorzichtige vensters"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Glazen vensters"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "1-venster verhouding"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Werkbladindeling",
+    "title": "Standaard werkbladindeling"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Tegelen"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Scrollen"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Zwevend"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr-themasync"
+  },
+  "setup.style": {
+    "label": "Stijl"
+  },
+  "setup.style.theme": {
     "label": "Thema"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Achtergrond"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Ontgrendelen"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Lettertype"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Schermbeveiliging"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Over"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Tekst bewerken"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Uit afbeelding instellen"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Standaard herstellen"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Tekst bewerken"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Uit afbeelding instellen"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Standaard herstellen"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Opnieuw opstarten naar opstartmenu"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

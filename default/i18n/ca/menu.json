@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Activa"
   },
-  "style": {
-    "label": "Estil"
-  },
   "setup": {
     "label": "Configuració"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Comunitat"
-  },
-  "trigger.appearance": {
-    "label": "Aparença"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animacions"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Barra de menú"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Amaga la barra"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Mostra la barra"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Situa la barra"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Fons de la barra"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Barra opaca"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Barra de vidre"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Barra transparent"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Indicadors de barra"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Percentatge de bateria"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Rellotge"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Diumenge 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Diumenge 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Diumenge 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Diumenge 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Dg 3 de maig 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Dg 3 de maig 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 de maig S18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 de maig S18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Barra superior"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Barra inferior"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Barra esquerra"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Barra dreta"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Amaga el Dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock sempre visible"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Posició del Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock superior"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock inferior"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock esquerre"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock dret"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Separació de finestres"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Cantons de finestra"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Cantons del tema"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Cantons rectes"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Cantons arrodonits"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Opacitat de finestres"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Finestres opaques"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Finestres transparents"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Finestres de vidre"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Proporció 1 finestra"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Disposició dels espais",
-    "title": "Disposició per defecte dels espais"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Mosaic"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Desplaçament"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Flotant"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Sincronització de tema Herdr"
   },
   "trigger.toggle": {
     "label": "Commuta"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Prova de velocitat de disc"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Aparença"
+  },
+  "setup.appearance.animations": {
+    "label": "Animacions"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Barra de menú"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Amaga la barra"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Mostra la barra"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Situa la barra"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Fons de la barra"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Barra opaca"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Barra de vidre"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Barra transparent"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Indicadors de barra"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Percentatge de bateria"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Rellotge"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Diumenge 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Diumenge 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Diumenge 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Diumenge 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Dg 3 de maig 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Dg 3 de maig 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 de maig S18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 de maig S18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Barra superior"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Barra inferior"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Barra esquerra"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Barra dreta"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Amaga el Dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock sempre visible"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Posició del Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock superior"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock inferior"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock esquerre"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock dret"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Separació de finestres"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Cantons de finestra"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Cantons del tema"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Cantons rectes"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Cantons arrodonits"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Opacitat de finestres"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Finestres opaques"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Finestres transparents"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Finestres de vidre"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Proporció 1 finestra"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Disposició dels espais",
+    "title": "Disposició per defecte dels espais"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Mosaic"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Desplaçament"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Flotant"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Sincronització de tema Herdr"
+  },
+  "setup.style": {
+    "label": "Estil"
+  },
+  "setup.style.theme": {
     "label": "Tema"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Fons"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Desbloqueja"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Tipus de lletra"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Salvapantalles"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Quant a"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Edita el text"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Des d'una imatge"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Restableix el defecte"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Edita el text"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Des d'una imatge"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Restableix el defecte"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Reinicia al menú d'arrencada"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

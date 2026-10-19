@@ -11,9 +11,6 @@
   "trigger": {
     "label": "اجرا"
   },
-  "style": {
-    "label": "ظاهر"
-  },
   "setup": {
     "label": "تنظیمات"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "جامعه"
-  },
-  "trigger.appearance": {
-    "label": "ظاهر"
-  },
-  "trigger.appearance.animations": {
-    "label": "پویانمایی"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "نوار منو"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "پنهان کردن نوار"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "نمایش نوار"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "موقعیت نوار"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "پس‌زمینه نوار"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "نوار مات"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "نوار شیشه‌ای"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "نوار شفاف"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "نشانگرهای نوار"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "درصد باتری"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "ساعت"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "یک‌شنبه 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "یک‌شنبه 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "یک‌شنبه 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "یک‌شنبه 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "یک‌شنبه 3 مه 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "یک‌شنبه 3 مه 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 مه W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 مه W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "نوار بالا"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "نوار پایین"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "نوار چپ"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "نوار راست"
-  },
-  "trigger.appearance.dock": {
-    "label": "داک"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "پنهان‌شدن خودکار داک"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "داک همیشه روشن"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "موقعیت داک"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "داک بالا"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "داک پایین"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "داک چپ"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "داک راست"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "فاصله پنجره‌ها"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "گوشه‌های پنجره"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "گوشه‌های تم"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "گوشه‌های تیز"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "گوشه‌های گرد"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "کدری پنجره"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "پنجره‌های مات"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "پنجره‌های شفاف"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "پنجره‌های شیشه‌ای"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "نسبت 1 پنجره"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "چیدمان فضای کاری",
-    "title": "چیدمان پیش‌فرض فضای کاری"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "کاشی‌کاری"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "پیمایش"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "شناور"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "همگام‌سازی تم Herdr"
   },
   "trigger.toggle": {
     "label": "روشن/خاموش"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "تست سرعت دیسک"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "ظاهر"
+  },
+  "setup.appearance.animations": {
+    "label": "پویانمایی"
+  },
+  "setup.appearance.top-bar": {
+    "label": "نوار منو"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "پنهان کردن نوار"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "نمایش نوار"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "موقعیت نوار"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "پس‌زمینه نوار"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "نوار مات"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "نوار شیشه‌ای"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "نوار شفاف"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "نشانگرهای نوار"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "درصد باتری"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "ساعت"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "یک‌شنبه 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "یک‌شنبه 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "یک‌شنبه 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "یک‌شنبه 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "یک‌شنبه 3 مه 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "یک‌شنبه 3 مه 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 مه W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 مه W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "نوار بالا"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "نوار پایین"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "نوار چپ"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "نوار راست"
+  },
+  "setup.appearance.dock": {
+    "label": "داک"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "پنهان‌شدن خودکار داک"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "داک همیشه روشن"
+  },
+  "setup.appearance.dock.position": {
+    "label": "موقعیت داک"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "داک بالا"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "داک پایین"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "داک چپ"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "داک راست"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "فاصله پنجره‌ها"
+  },
+  "setup.appearance.window-corners": {
+    "label": "گوشه‌های پنجره"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "گوشه‌های تم"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "گوشه‌های تیز"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "گوشه‌های گرد"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "کدری پنجره"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "پنجره‌های مات"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "پنجره‌های شفاف"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "پنجره‌های شیشه‌ای"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "نسبت 1 پنجره"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "چیدمان فضای کاری",
+    "title": "چیدمان پیش‌فرض فضای کاری"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "کاشی‌کاری"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "پیمایش"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "شناور"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "همگام‌سازی تم Herdr"
+  },
+  "setup.style": {
+    "label": "ظاهر"
+  },
+  "setup.style.theme": {
     "label": "تم"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "پس‌زمینه"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "باز کردن قفل"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "قلم"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "محافظ صفحه"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "درباره"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "ویرایش متن"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "تنظیم از تصویر"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "بازیابی پیش‌فرض"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "ویرایش متن"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "تنظیم از تصویر"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "بازیابی پیش‌فرض"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "راه‌اندازی مجدد به منوی بوت"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

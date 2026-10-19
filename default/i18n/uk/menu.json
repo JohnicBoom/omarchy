@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Дії"
   },
-  "style": {
-    "label": "Стиль"
-  },
   "setup": {
     "label": "Налаштування"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Спільнота"
-  },
-  "trigger.appearance": {
-    "label": "Вигляд"
-  },
-  "trigger.appearance.animations": {
-    "label": "Анімації"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Панель меню"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Сховати панель"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Показати панель"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Положення панелі"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Фон панелі"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Непрозора панель"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Скляна панель"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Прозора панель"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Індикатори панелі"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Відсоток батареї"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Годинник"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Неділя 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Неділя 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Неділя 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Неділя 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Нд 3 тра 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Нд 3 тра 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 тра W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 тра W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Панель зверху"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Панель знизу"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Панель ліворуч"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Панель праворуч"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Автоприховування Dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Завжди видимий Dock"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Положення Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock зверху"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock знизу"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock ліворуч"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock праворуч"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Відступи вікон"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Кути вікон"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Кути теми"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Гострі кути"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Заокруглені кути"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Непрозорість вікон"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Непрозорі вікна"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Прозорі вікна"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Скляні вікна"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Співвідношення 1 вікна"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Схема робочого простору",
-    "title": "Типова схема робочого простору"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Мозаїка"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Прокручування"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Плаваючі"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Синхронізація теми Herdr"
   },
   "trigger.toggle": {
     "label": "Перемикати"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Тест швидкості диска"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Вигляд"
+  },
+  "setup.appearance.animations": {
+    "label": "Анімації"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Панель меню"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Сховати панель"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Показати панель"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Положення панелі"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Фон панелі"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Непрозора панель"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Скляна панель"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Прозора панель"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Індикатори панелі"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Відсоток батареї"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Годинник"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Неділя 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Неділя 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Неділя 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Неділя 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Нд 3 тра 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Нд 3 тра 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 тра W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 тра W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Панель зверху"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Панель знизу"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Панель ліворуч"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Панель праворуч"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Автоприховування Dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Завжди видимий Dock"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Положення Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock зверху"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock знизу"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock ліворуч"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock праворуч"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Відступи вікон"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Кути вікон"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Кути теми"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Гострі кути"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Заокруглені кути"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Непрозорість вікон"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Непрозорі вікна"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Прозорі вікна"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Скляні вікна"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Співвідношення 1 вікна"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Схема робочого простору",
+    "title": "Типова схема робочого простору"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Мозаїка"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Прокручування"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Плаваючі"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Синхронізація теми Herdr"
+  },
+  "setup.style": {
+    "label": "Стиль"
+  },
+  "setup.style.theme": {
     "label": "Тема"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Фон"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Розблокувати"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Шрифт"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Заставка"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Про програму"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Редагувати текст"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Встановити зображення"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Відновити типові"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Редагувати текст"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Встановити зображення"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Відновити типові"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Перезавантажити в меню завантаження"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

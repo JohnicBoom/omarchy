@@ -11,9 +11,6 @@
   "trigger": {
     "label": "觸發"
   },
-  "style": {
-    "label": "風格"
-  },
   "setup": {
     "label": "設定"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "社群"
-  },
-  "trigger.appearance": {
-    "label": "外觀"
-  },
-  "trigger.appearance.animations": {
-    "label": "動畫"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "選單列"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "隱藏列"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "顯示列"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "列位置"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "列背景"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "不透明列"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "玻璃列"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "透明列"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "列指示"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "電池百分比"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "時鐘"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "星期日 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "星期日 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "星期日 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "星期日 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "週日 3 5月 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "週日 3 5月 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 5月 W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 5月 W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "頂部列"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "底部列"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "左側列"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "右側列"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "自動隱藏 Dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock 常駐"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Dock 位置"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "頂部 Dock"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "底部 Dock"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "左側 Dock"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "右側 Dock"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "視窗間距"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "視窗圓角"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "主題圓角"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "直角"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "圓角"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "視窗不透明度"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "不透明視窗"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "透明視窗"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "玻璃視窗"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "單視窗比例"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "工作區配置",
-    "title": "預設工作區配置"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "平鋪"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "捲動"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "浮動"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr 主題同步"
   },
   "trigger.toggle": {
     "label": "切換"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "磁碟測速"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "外觀"
+  },
+  "setup.appearance.animations": {
+    "label": "動畫"
+  },
+  "setup.appearance.top-bar": {
+    "label": "選單列"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "隱藏列"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "顯示列"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "列位置"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "列背景"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "不透明列"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "玻璃列"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "透明列"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "列指示"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "電池百分比"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "時鐘"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "星期日 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "星期日 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "星期日 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "星期日 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "週日 3 5月 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "週日 3 5月 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 5月 W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 5月 W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "頂部列"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "底部列"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "左側列"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "右側列"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "自動隱藏 Dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock 常駐"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Dock 位置"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "頂部 Dock"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "底部 Dock"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "左側 Dock"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "右側 Dock"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "視窗間距"
+  },
+  "setup.appearance.window-corners": {
+    "label": "視窗圓角"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "主題圓角"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "直角"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "圓角"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "視窗不透明度"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "不透明視窗"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "透明視窗"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "玻璃視窗"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "單視窗比例"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "工作區配置",
+    "title": "預設工作區配置"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "平鋪"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "捲動"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "浮動"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr 主題同步"
+  },
+  "setup.style": {
+    "label": "風格"
+  },
+  "setup.style.theme": {
     "label": "主題"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "背景"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "解鎖"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "字型"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "螢幕保護程式"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "關於"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "編輯文字"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "以圖片設定"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "還原預設"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "編輯文字"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "以圖片設定"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "還原預設"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "重新開機至開機選單"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

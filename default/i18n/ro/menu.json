@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Declanșator"
   },
-  "style": {
-    "label": "Stil"
-  },
   "setup": {
     "label": "Configurare"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Comunitate"
-  },
-  "trigger.appearance": {
-    "label": "Aspect"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animații"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Bară de meniu"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Ascunde bara"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Afișează bara"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Poziție bară"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Fundal bară"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Bară opacă"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Bară sticloasă"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Bară transparentă"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Indicatori bară"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Procent baterie"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Ceas"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Duminică 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Duminică 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Duminică 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Duminică 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Dum 3 mai 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Dum 3 mai 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 mai S18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 mai S18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Bară sus"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Bară jos"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Bară stânga"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Bară dreapta"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Ascunde dock automat"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock permanent"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Poziție dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock sus"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock jos"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock stânga"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock dreapta"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Spații fereastră"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Colțuri fereastră"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Colțuri temă"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Colțuri ascuțite"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Colțuri rotunjite"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Opacitate fereastră"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Ferestre opace"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Ferestre transparente"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Ferestre sticloase"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Raport 1 fereastră"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Aranjare spații",
-    "title": "Aranjare implicită spații"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Mozaic"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Defilant"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Plutitor"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Sincronizare temă Herdr"
   },
   "trigger.toggle": {
     "label": "Comută"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Test viteză disc"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Aspect"
+  },
+  "setup.appearance.animations": {
+    "label": "Animații"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Bară de meniu"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Ascunde bara"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Afișează bara"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Poziție bară"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Fundal bară"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Bară opacă"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Bară sticloasă"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Bară transparentă"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Indicatori bară"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Procent baterie"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Ceas"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Duminică 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Duminică 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Duminică 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Duminică 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Dum 3 mai 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Dum 3 mai 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 mai S18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 mai S18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Bară sus"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Bară jos"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Bară stânga"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Bară dreapta"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Ascunde dock automat"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock permanent"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Poziție dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock sus"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock jos"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock stânga"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock dreapta"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Spații fereastră"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Colțuri fereastră"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Colțuri temă"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Colțuri ascuțite"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Colțuri rotunjite"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Opacitate fereastră"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Ferestre opace"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Ferestre transparente"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Ferestre sticloase"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Raport 1 fereastră"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Aranjare spații",
+    "title": "Aranjare implicită spații"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Mozaic"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Defilant"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Plutitor"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Sincronizare temă Herdr"
+  },
+  "setup.style": {
+    "label": "Stil"
+  },
+  "setup.style.theme": {
     "label": "Temă"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Fundal"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Deblochează"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Font"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Economizor ecran"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Despre"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Editează textul"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Setează din imagine"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Restabilește implicit"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Editează textul"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Setează din imagine"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Restabilește implicit"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Repornește în meniul de boot"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

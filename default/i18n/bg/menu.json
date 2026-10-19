@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Задействай"
   },
-  "style": {
-    "label": "Стил"
-  },
   "setup": {
     "label": "Настройка"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Общност"
-  },
-  "trigger.appearance": {
-    "label": "Външен вид"
-  },
-  "trigger.appearance.animations": {
-    "label": "Анимации"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Лента"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Скрий лентата"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Покажи лентата"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Позиция на лентата"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Фон на лентата"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Непрозрачна лента"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Стъклена лента"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Прозрачна лента"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Индикатори"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Процент батерия"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Часовник"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Неделя 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Неделя 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Неделя 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Неделя 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Нед 3 май 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Нед 3 май 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 май С18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 май С18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Горна лента"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Долна лента"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Лява лента"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Дясна лента"
-  },
-  "trigger.appearance.dock": {
-    "label": "Док"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Скривай дока"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Винаги видим док"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Позиция на дока"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Горен док"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Долен док"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Ляв док"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Десен док"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Разстояния прозорци"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Ъгли прозорци"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Ъгли от темата"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Остри ъгли"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Заоблени ъгли"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Непрозрачност прозорци"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Непрозрачни прозорци"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Прозрачни прозорци"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Стъклени прозорци"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Съотношение 1 прозорец"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Оформление",
-    "title": "Оформление по подразбиране"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Плочки"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Превъртане"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Плаващо"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Синхронизация с Herdr"
   },
   "trigger.toggle": {
     "label": "Превключи"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Тест диск"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Външен вид"
+  },
+  "setup.appearance.animations": {
+    "label": "Анимации"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Лента"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Скрий лентата"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Покажи лентата"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Позиция на лентата"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Фон на лентата"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Непрозрачна лента"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Стъклена лента"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Прозрачна лента"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Индикатори"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Процент батерия"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Часовник"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Неделя 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Неделя 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Неделя 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Неделя 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Нед 3 май 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Нед 3 май 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 май С18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 май С18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Горна лента"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Долна лента"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Лява лента"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Дясна лента"
+  },
+  "setup.appearance.dock": {
+    "label": "Док"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Скривай дока"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Винаги видим док"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Позиция на дока"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Горен док"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Долен док"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Ляв док"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Десен док"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Разстояния прозорци"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Ъгли прозорци"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Ъгли от темата"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Остри ъгли"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Заоблени ъгли"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Непрозрачност прозорци"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Непрозрачни прозорци"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Прозрачни прозорци"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Стъклени прозорци"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Съотношение 1 прозорец"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Оформление",
+    "title": "Оформление по подразбиране"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Плочки"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Превъртане"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Плаващо"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Синхронизация с Herdr"
+  },
+  "setup.style": {
+    "label": "Стил"
+  },
+  "setup.style.theme": {
     "label": "Тема"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Фон"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Отключи"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Шрифт"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Скрийнсейвър"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "За"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Редактирай текст"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "От изображение"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Възстанови"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Редактирай текст"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "От изображение"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Възстанови"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Рестарт към менюто за зареждане"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

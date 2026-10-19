@@ -11,9 +11,6 @@
   "trigger": {
     "label": "触发"
   },
-  "style": {
-    "label": "样式"
-  },
   "setup": {
     "label": "设置"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "社区"
-  },
-  "trigger.appearance": {
-    "label": "外观"
-  },
-  "trigger.appearance.animations": {
-    "label": "动画"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "菜单栏"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "隐藏栏"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "显示栏"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "栏位置"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "栏背景"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "不透明栏"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "玻璃栏"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "透明栏"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "栏指示器"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "电池百分比"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "时钟"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "星期日 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "星期日 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "星期日 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "星期日 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "周日 5月3日 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "周日 5月3日 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "5月3日 W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "5月03日 W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "顶部栏"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "底部栏"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "左侧栏"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "右侧栏"
-  },
-  "trigger.appearance.dock": {
-    "label": "程序坞"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "自动隐藏程序坞"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "常显程序坞"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "程序坞位置"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "顶部程序坞"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "底部程序坞"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "左侧程序坞"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "右侧程序坞"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "窗口间距"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "窗口圆角"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "主题圆角"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "直角"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "圆角"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "窗口不透明度"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "不透明窗口"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "透明窗口"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "玻璃窗口"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "单窗口比例"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "工作区布局",
-    "title": "默认工作区布局"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "平铺"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "滚动"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "浮动"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr 主题同步"
   },
   "trigger.toggle": {
     "label": "开关"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "磁盘测速"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "外观"
+  },
+  "setup.appearance.animations": {
+    "label": "动画"
+  },
+  "setup.appearance.top-bar": {
+    "label": "菜单栏"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "隐藏栏"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "显示栏"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "栏位置"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "栏背景"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "不透明栏"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "玻璃栏"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "透明栏"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "栏指示器"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "电池百分比"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "时钟"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "星期日 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "星期日 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "星期日 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "星期日 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "周日 5月3日 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "周日 5月3日 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "5月3日 W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "5月03日 W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "顶部栏"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "底部栏"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "左侧栏"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "右侧栏"
+  },
+  "setup.appearance.dock": {
+    "label": "程序坞"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "自动隐藏程序坞"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "常显程序坞"
+  },
+  "setup.appearance.dock.position": {
+    "label": "程序坞位置"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "顶部程序坞"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "底部程序坞"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "左侧程序坞"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "右侧程序坞"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "窗口间距"
+  },
+  "setup.appearance.window-corners": {
+    "label": "窗口圆角"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "主题圆角"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "直角"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "圆角"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "窗口不透明度"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "不透明窗口"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "透明窗口"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "玻璃窗口"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "单窗口比例"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "工作区布局",
+    "title": "默认工作区布局"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "平铺"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "滚动"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "浮动"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr 主题同步"
+  },
+  "setup.style": {
+    "label": "样式"
+  },
+  "setup.style.theme": {
     "label": "主题"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "背景"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "解锁"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "字体"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "屏保"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "关于"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "编辑文本"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "从图片设置"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "恢复默认"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "编辑文本"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "从图片设置"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "恢复默认"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "重启到启动菜单"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

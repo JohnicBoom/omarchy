@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Utløs"
   },
-  "style": {
-    "label": "Stil"
-  },
   "setup": {
     "label": "Oppsett"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Fellesskap"
-  },
-  "trigger.appearance": {
-    "label": "Utseende"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animasjoner"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Menylinje"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Skjul linje"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Vis linje"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Plasser linje"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Linjebakgrunn"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Ugjennomsiktig linje"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Glasslinje"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Klar linje"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Linjeindikatorer"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Batteriprosent"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Klokke"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Søndag 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Søndag 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Søndag 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Søndag 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Søn 3. mai 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Søn 3. mai 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3. mai U18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03. mai U18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Øverste linje"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Nederste linje"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Venstre linje"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Høyre linje"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Skjul dock automatisk"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Alltid synlig dock"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Dockplassering"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Øverste dock"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Nederste dock"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Venstre dock"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Høyre dock"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Vindusmellomrom"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Vindushjørner"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Temahjørner"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Skarpe hjørner"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Avrundede hjørner"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Vindusdekning"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Ugjennomsiktige vinduer"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Gjennomsiktige vinduer"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Glassvinduer"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "1-vindus-forhold"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Arbeidsområdeoppsett",
-    "title": "Standard arbeidsområdeoppsett"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Flislegging"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Rulling"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Flytende"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr-temasynk"
   },
   "trigger.toggle": {
     "label": "Av/på"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Diskhastighetstest"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Utseende"
+  },
+  "setup.appearance.animations": {
+    "label": "Animasjoner"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Menylinje"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Skjul linje"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Vis linje"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Plasser linje"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Linjebakgrunn"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Ugjennomsiktig linje"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Glasslinje"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Klar linje"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Linjeindikatorer"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Batteriprosent"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Klokke"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Søndag 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Søndag 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Søndag 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Søndag 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Søn 3. mai 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Søn 3. mai 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3. mai U18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03. mai U18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Øverste linje"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Nederste linje"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Venstre linje"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Høyre linje"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Skjul dock automatisk"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Alltid synlig dock"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Dockplassering"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Øverste dock"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Nederste dock"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Venstre dock"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Høyre dock"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Vindusmellomrom"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Vindushjørner"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Temahjørner"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Skarpe hjørner"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Avrundede hjørner"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Vindusdekning"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Ugjennomsiktige vinduer"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Gjennomsiktige vinduer"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Glassvinduer"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "1-vindus-forhold"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Arbeidsområdeoppsett",
+    "title": "Standard arbeidsområdeoppsett"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Flislegging"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Rulling"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Flytende"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr-temasynk"
+  },
+  "setup.style": {
+    "label": "Stil"
+  },
+  "setup.style.theme": {
     "label": "Tema"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Bakgrunn"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Lås opp"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Skrifttype"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Skjermsparer"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Om"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Rediger tekst"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Sett fra bilde"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Gjenopprett standard"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Rediger tekst"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Sett fra bilde"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Gjenopprett standard"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Start på nytt til oppstartsmeny"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

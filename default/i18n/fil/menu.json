@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Mag-trigger"
   },
-  "style": {
-    "label": "Estilo"
-  },
   "setup": {
     "label": "Pag-setup"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Komunidad"
-  },
-  "trigger.appearance": {
-    "label": "Hitsura"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animasyon"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Menu Bar"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Itago ang Bar"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Ipakita ang Bar"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Iposisyon ang Bar"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Background ng Bar"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Opaque na Bar"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Mala-salaming Bar"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Malinaw na Bar"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Mga Indikator ng Bar"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Porsyento ng Baterya"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Orasan"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Linggo 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Linggo 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Linggo 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Linggo 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Lin 3 Mayo 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Lin 3 Mayo 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 Mayo W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 Mayo W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Bar sa Itaas"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Bar sa Ibaba"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Bar sa Kaliwa"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Bar sa Kanan"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Awtomatikong Itago ang Dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Laging Kita ang Dock"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Posisyon ng Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock sa Itaas"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock sa Ibaba"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock sa Kaliwa"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock sa Kanan"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Pagitan ng Bintana"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Sulok ng Bintana"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Sulok ng Tema"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Matalim na Sulok"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Bilugang Sulok"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Opacity ng Bintana"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Opaque na Bintana"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Transparent na Bintana"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Mala-salaming Bintana"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Ratio ng 1 Bintana"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Layout ng Workspace",
-    "title": "Default na Layout ng Workspace"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Pag-tile"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Pag-scroll"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Lumulutang"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Sync ng Tema ng Herdr"
   },
   "trigger.toggle": {
     "label": "I-toggle"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Test ng Bilis ng Disk"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Hitsura"
+  },
+  "setup.appearance.animations": {
+    "label": "Animasyon"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Menu Bar"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Itago ang Bar"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Ipakita ang Bar"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Iposisyon ang Bar"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Background ng Bar"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Opaque na Bar"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Mala-salaming Bar"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Malinaw na Bar"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Mga Indikator ng Bar"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Porsyento ng Baterya"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Orasan"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Linggo 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Linggo 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Linggo 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Linggo 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Lin 3 Mayo 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Lin 3 Mayo 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 Mayo W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 Mayo W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Bar sa Itaas"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Bar sa Ibaba"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Bar sa Kaliwa"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Bar sa Kanan"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Awtomatikong Itago ang Dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Laging Kita ang Dock"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Posisyon ng Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock sa Itaas"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock sa Ibaba"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock sa Kaliwa"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock sa Kanan"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Pagitan ng Bintana"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Sulok ng Bintana"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Sulok ng Tema"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Matalim na Sulok"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Bilugang Sulok"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Opacity ng Bintana"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Opaque na Bintana"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Transparent na Bintana"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Mala-salaming Bintana"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Ratio ng 1 Bintana"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Layout ng Workspace",
+    "title": "Default na Layout ng Workspace"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Pag-tile"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Pag-scroll"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Lumulutang"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Sync ng Tema ng Herdr"
+  },
+  "setup.style": {
+    "label": "Estilo"
+  },
+  "setup.style.theme": {
     "label": "Tema"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Background"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "I-unlock"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Font"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Screensaver"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Tungkol"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "I-edit ang Teksto"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Itakda mula sa Larawan"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Ibalik ang Default"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "I-edit ang Teksto"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Itakda mula sa Larawan"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Ibalik ang Default"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "I-reboot sa Boot Menu"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

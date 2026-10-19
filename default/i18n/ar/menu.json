@@ -11,9 +11,6 @@
   "trigger": {
     "label": "تشغيل"
   },
-  "style": {
-    "label": "النمط"
-  },
   "setup": {
     "label": "الإعداد"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "المجتمع"
-  },
-  "trigger.appearance": {
-    "label": "المظهر"
-  },
-  "trigger.appearance.animations": {
-    "label": "الرسوم المتحركة"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "شريط القائمة"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "إخفاء الشريط"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "إظهار الشريط"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "موضع الشريط"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "خلفية الشريط"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "شريط معتم"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "شريط زجاجي"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "شريط شفاف"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "مؤشرات الشريط"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "نسبة البطارية"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "الساعة"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "الأحد 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "الأحد 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "الأحد 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "الأحد 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "الأحد 3 مايو 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "الأحد 3 مايو 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 مايو W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 مايو W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "شريط علوي"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "شريط سفلي"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "شريط أيسر"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "شريط أيمن"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "إخفاء Dock تلقائيًا"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Dock دائم الظهور"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "موضع Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock علوي"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock سفلي"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock أيسر"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock أيمن"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "فواصل النوافذ"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "زوايا النوافذ"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "زوايا السمة"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "زوايا حادة"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "زوايا مستديرة"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "عتامة النوافذ"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "نوافذ معتمة"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "نوافذ شفافة"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "نوافذ زجاجية"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "نسبة النافذة الواحدة"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "تخطيط مساحة العمل",
-    "title": "تخطيط مساحة العمل الافتراضي"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "تبليط"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "تمرير"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "عائم"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "مزامنة سمة Herdr"
   },
   "trigger.toggle": {
     "label": "تبديل"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "اختبار سرعة القرص"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "المظهر"
+  },
+  "setup.appearance.animations": {
+    "label": "الرسوم المتحركة"
+  },
+  "setup.appearance.top-bar": {
+    "label": "شريط القائمة"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "إخفاء الشريط"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "إظهار الشريط"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "موضع الشريط"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "خلفية الشريط"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "شريط معتم"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "شريط زجاجي"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "شريط شفاف"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "مؤشرات الشريط"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "نسبة البطارية"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "الساعة"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "الأحد 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "الأحد 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "الأحد 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "الأحد 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "الأحد 3 مايو 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "الأحد 3 مايو 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 مايو W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 مايو W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "شريط علوي"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "شريط سفلي"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "شريط أيسر"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "شريط أيمن"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "إخفاء Dock تلقائيًا"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Dock دائم الظهور"
+  },
+  "setup.appearance.dock.position": {
+    "label": "موضع Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock علوي"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock سفلي"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock أيسر"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock أيمن"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "فواصل النوافذ"
+  },
+  "setup.appearance.window-corners": {
+    "label": "زوايا النوافذ"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "زوايا السمة"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "زوايا حادة"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "زوايا مستديرة"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "عتامة النوافذ"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "نوافذ معتمة"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "نوافذ شفافة"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "نوافذ زجاجية"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "نسبة النافذة الواحدة"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "تخطيط مساحة العمل",
+    "title": "تخطيط مساحة العمل الافتراضي"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "تبليط"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "تمرير"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "عائم"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "مزامنة سمة Herdr"
+  },
+  "setup.style": {
+    "label": "النمط"
+  },
+  "setup.style.theme": {
     "label": "السمة"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "الخلفية"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "فتح القفل"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "الخط"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "شاشة التوقف"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "حول"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "تعديل النص"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "تعيين من صورة"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "استعادة الافتراضي"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "تعديل النص"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "تعيين من صورة"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "استعادة الافتراضي"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "إعادة التشغيل إلى قائمة الإقلاع"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

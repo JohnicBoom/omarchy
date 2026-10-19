@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Palaist"
   },
-  "style": {
-    "label": "Stils"
-  },
   "setup": {
     "label": "Iestatīšana"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Kopiena"
-  },
-  "trigger.appearance": {
-    "label": "Izskats"
-  },
-  "trigger.appearance.animations": {
-    "label": "Animācijas"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Izvēlņu josla"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Paslēpt joslu"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Rādīt joslu"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Joslas vieta"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Joslas fons"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Necaurspīdīga josla"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Stikla josla"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Caurspīdīga josla"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Joslas rādītāji"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Baterijas procenti"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Pulkstenis"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Svētdiena 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Svētdiena 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Svētdiena 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Svētdiena 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Svēt. 3. maijs 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Svēt. 3. maijs 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3. maijs N18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03. maijs N18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Augšējā josla"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Apakšējā josla"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Kreisā josla"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Labā josla"
-  },
-  "trigger.appearance.dock": {
-    "label": "Doks"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Paslēpt doku automātiski"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Vienmēr redzams doks"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Doka vieta"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Augšējais doks"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Apakšējais doks"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Kreisais doks"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Labais doks"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Logu atstarpes"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Logu stūri"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Tēmas stūri"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Asi stūri"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Noapaļoti stūri"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Logu necaurspīdīgums"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Necaurspīdīgi logi"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Caurspīdīgi logi"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Stikla logi"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "1 loga attiecība"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Darbvietas izkārtojums",
-    "title": "Noklusējuma darbvietas izkārtojums"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Mozaīka"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Ritināšana"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Peldošs"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr tēmu sinhronizācija"
   },
   "trigger.toggle": {
     "label": "Pārslēgt"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Diska ātruma tests"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Izskats"
+  },
+  "setup.appearance.animations": {
+    "label": "Animācijas"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Izvēlņu josla"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Paslēpt joslu"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Rādīt joslu"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Joslas vieta"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Joslas fons"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Necaurspīdīga josla"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Stikla josla"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Caurspīdīga josla"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Joslas rādītāji"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Baterijas procenti"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Pulkstenis"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Svētdiena 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Svētdiena 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Svētdiena 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Svētdiena 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Svēt. 3. maijs 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Svēt. 3. maijs 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3. maijs N18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03. maijs N18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Augšējā josla"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Apakšējā josla"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Kreisā josla"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Labā josla"
+  },
+  "setup.appearance.dock": {
+    "label": "Doks"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Paslēpt doku automātiski"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Vienmēr redzams doks"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Doka vieta"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Augšējais doks"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Apakšējais doks"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Kreisais doks"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Labais doks"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Logu atstarpes"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Logu stūri"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Tēmas stūri"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Asi stūri"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Noapaļoti stūri"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Logu necaurspīdīgums"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Necaurspīdīgi logi"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Caurspīdīgi logi"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Stikla logi"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "1 loga attiecība"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Darbvietas izkārtojums",
+    "title": "Noklusējuma darbvietas izkārtojums"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Mozaīka"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Ritināšana"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Peldošs"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr tēmu sinhronizācija"
+  },
+  "setup.style": {
+    "label": "Stils"
+  },
+  "setup.style.theme": {
     "label": "Tēma"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Fons"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Atbloķēt"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Fonts"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Ekrānsaudzētājs"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Par"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Rediģēt tekstu"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Uzlikt no attēla"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Atjaunot noklusējumu"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Rediģēt tekstu"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Uzlikt no attēla"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Atjaunot noklusējumu"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Restartēt uz sāknēšanas izvēlni"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

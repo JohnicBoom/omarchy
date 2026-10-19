@@ -11,9 +11,6 @@
   "trigger": {
     "label": "สั่งการ"
   },
-  "style": {
-    "label": "สไตล์"
-  },
   "setup": {
     "label": "ตั้งค่า"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "ชุมชน"
-  },
-  "trigger.appearance": {
-    "label": "ลักษณะ"
-  },
-  "trigger.appearance.animations": {
-    "label": "แอนิเมชัน"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "แถบเมนู"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "ซ่อนแถบ"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "แสดงแถบ"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "ตำแหน่งแถบ"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "พื้นหลังแถบ"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "แถบทึบ"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "แถบกระจก"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "แถบใส"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "ตัวชี้วัดแถบ"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "เปอร์เซ็นต์แบต"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "นาฬิกา"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "อาทิตย์ 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "อาทิตย์ 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "อาทิตย์ 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "อาทิตย์ 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "อา. 3 พ.ค. 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "อา. 3 พ.ค. 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 พ.ค. W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 พ.ค. W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "แถบบน"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "แถบล่าง"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "แถบซ้าย"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "แถบขวา"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "ซ่อน Dock อัตโนมัติ"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "แสดง Dock เสมอ"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "ตำแหน่ง Dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Dock บน"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Dock ล่าง"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Dock ซ้าย"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Dock ขวา"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "ช่องว่างหน้าต่าง"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "มุมหน้าต่าง"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "มุมตามธีม"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "มุมแหลม"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "มุมโค้ง"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "ความทึบหน้าต่าง"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "หน้าต่างทึบ"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "หน้าต่างใส"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "หน้าต่างกระจก"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "อัตราส่วน 1 หน้าต่าง"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "เค้าโครงพื้นที่งาน",
-    "title": "เค้าโครงพื้นที่งานเริ่มต้น"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "เรียงหน้าต่าง"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "เลื่อน"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "ลอย"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "ซิงก์ธีม Herdr"
   },
   "trigger.toggle": {
     "label": "สลับ"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "ทดสอบความเร็วดิสก์"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "ลักษณะ"
+  },
+  "setup.appearance.animations": {
+    "label": "แอนิเมชัน"
+  },
+  "setup.appearance.top-bar": {
+    "label": "แถบเมนู"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "ซ่อนแถบ"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "แสดงแถบ"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "ตำแหน่งแถบ"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "พื้นหลังแถบ"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "แถบทึบ"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "แถบกระจก"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "แถบใส"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "ตัวชี้วัดแถบ"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "เปอร์เซ็นต์แบต"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "นาฬิกา"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "อาทิตย์ 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "อาทิตย์ 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "อาทิตย์ 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "อาทิตย์ 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "อา. 3 พ.ค. 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "อา. 3 พ.ค. 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 พ.ค. W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 พ.ค. W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "แถบบน"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "แถบล่าง"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "แถบซ้าย"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "แถบขวา"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "ซ่อน Dock อัตโนมัติ"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "แสดง Dock เสมอ"
+  },
+  "setup.appearance.dock.position": {
+    "label": "ตำแหน่ง Dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Dock บน"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Dock ล่าง"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Dock ซ้าย"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Dock ขวา"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "ช่องว่างหน้าต่าง"
+  },
+  "setup.appearance.window-corners": {
+    "label": "มุมหน้าต่าง"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "มุมตามธีม"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "มุมแหลม"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "มุมโค้ง"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "ความทึบหน้าต่าง"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "หน้าต่างทึบ"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "หน้าต่างใส"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "หน้าต่างกระจก"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "อัตราส่วน 1 หน้าต่าง"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "เค้าโครงพื้นที่งาน",
+    "title": "เค้าโครงพื้นที่งานเริ่มต้น"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "เรียงหน้าต่าง"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "เลื่อน"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "ลอย"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "ซิงก์ธีม Herdr"
+  },
+  "setup.style": {
+    "label": "สไตล์"
+  },
+  "setup.style.theme": {
     "label": "ธีม"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "พื้นหลัง"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "ปลดล็อก"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "ฟอนต์"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "พักหน้าจอ"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "เกี่ยวกับ"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "แก้ข้อความ"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "ตั้งจากภาพ"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "คืนค่าเริ่มต้น"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "แก้ข้อความ"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "ตั้งจากภาพ"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "คืนค่าเริ่มต้น"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "รีบูตไปยังเมนูบูต"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

@@ -11,9 +11,6 @@
   "trigger": {
     "label": "실행"
   },
-  "style": {
-    "label": "스타일"
-  },
   "setup": {
     "label": "설정"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "커뮤니티"
-  },
-  "trigger.appearance": {
-    "label": "모양"
-  },
-  "trigger.appearance.animations": {
-    "label": "애니메이션"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "메뉴 막대"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "막대 숨기기"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "막대 표시"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "막대 위치"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "막대 배경"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "불투명 막대"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "유리 막대"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "투명 막대"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "막대 표시기"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "배터리 백분율"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "시계"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "일요일 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "일요일 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "일요일 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "일요일 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "일 5월 3일 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "일 5월 3일 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "5월 3일 W18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 5월 W18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "상단 막대"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "하단 막대"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "왼쪽 막대"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "오른쪽 막대"
-  },
-  "trigger.appearance.dock": {
-    "label": "독"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "독 자동 숨기기"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "독 항상 표시"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "독 위치"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "상단 독"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "하단 독"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "왼쪽 독"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "오른쪽 독"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "창 간격"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "창 모서리"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "테마 모서리"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "뾰족한 모서리"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "둥근 모서리"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "창 불투명도"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "불투명 창"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "투명 창"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "유리 창"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "1-창 비율"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "워크스페이스 레이아웃",
-    "title": "기본 워크스페이스 레이아웃"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "타일링"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "스크롤"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "플로팅"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Herdr 테마 동기화"
   },
   "trigger.toggle": {
     "label": "토글"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "디스크 속도 테스트"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "모양"
+  },
+  "setup.appearance.animations": {
+    "label": "애니메이션"
+  },
+  "setup.appearance.top-bar": {
+    "label": "메뉴 막대"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "막대 숨기기"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "막대 표시"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "막대 위치"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "막대 배경"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "불투명 막대"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "유리 막대"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "투명 막대"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "막대 표시기"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "배터리 백분율"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "시계"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "일요일 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "일요일 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "일요일 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "일요일 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "일 5월 3일 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "일 5월 3일 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "5월 3일 W18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 5월 W18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "상단 막대"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "하단 막대"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "왼쪽 막대"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "오른쪽 막대"
+  },
+  "setup.appearance.dock": {
+    "label": "독"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "독 자동 숨기기"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "독 항상 표시"
+  },
+  "setup.appearance.dock.position": {
+    "label": "독 위치"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "상단 독"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "하단 독"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "왼쪽 독"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "오른쪽 독"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "창 간격"
+  },
+  "setup.appearance.window-corners": {
+    "label": "창 모서리"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "테마 모서리"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "뾰족한 모서리"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "둥근 모서리"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "창 불투명도"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "불투명 창"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "투명 창"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "유리 창"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "1-창 비율"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "워크스페이스 레이아웃",
+    "title": "기본 워크스페이스 레이아웃"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "타일링"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "스크롤"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "플로팅"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Herdr 테마 동기화"
+  },
+  "setup.style": {
+    "label": "스타일"
+  },
+  "setup.style.theme": {
     "label": "테마"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "배경"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "잠금 해제"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "글꼴"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "화면 보호기"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "정보"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "텍스트 편집"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "이미지에서 설정"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "기본값 복원"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "텍스트 편집"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "이미지에서 설정"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "기본값 복원"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "부트 메뉴로 재시작"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }

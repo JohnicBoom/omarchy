@@ -11,9 +11,6 @@
   "trigger": {
     "label": "Ενεργοποίηση"
   },
-  "style": {
-    "label": "Στυλ"
-  },
   "setup": {
     "label": "Ρύθμιση"
   },
@@ -79,169 +76,6 @@
   },
   "learn.community": {
     "label": "Κοινότητα"
-  },
-  "trigger.appearance": {
-    "label": "Εμφάνιση"
-  },
-  "trigger.appearance.animations": {
-    "label": "Κινήσεις"
-  },
-  "trigger.appearance.top-bar": {
-    "label": "Γραμμή μενού"
-  },
-  "trigger.appearance.top-bar.hide": {
-    "label": "Απόκρυψη γραμμής"
-  },
-  "trigger.appearance.top-bar.show": {
-    "label": "Εμφάνιση γραμμής"
-  },
-  "trigger.appearance.top-bar.position": {
-    "label": "Θέση γραμμής"
-  },
-  "trigger.appearance.top-bar.background": {
-    "label": "Φόντο γραμμής"
-  },
-  "trigger.appearance.top-bar.background.opaque": {
-    "label": "Αδιαφανής γραμμή"
-  },
-  "trigger.appearance.top-bar.background.glassy": {
-    "label": "Γυάλινη γραμμή"
-  },
-  "trigger.appearance.top-bar.background.clear": {
-    "label": "Διάφανη γραμμή"
-  },
-  "trigger.appearance.top-bar.indicators": {
-    "label": "Ενδείξεις γραμμής"
-  },
-  "trigger.appearance.top-bar.indicators.battery-percentage": {
-    "label": "Ποσοστό μπαταρίας"
-  },
-  "trigger.appearance.top-bar.indicators.clock": {
-    "label": "Ρολόι"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-24h": {
-    "label": "Κυριακή 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-12h": {
-    "label": "Κυριακή 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
-    "label": "Κυριακή 14:30:05"
-  },
-  "trigger.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
-    "label": "Κυριακή 2:30:05 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-24h": {
-    "label": "14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.time-12h": {
-    "label": "2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-24h": {
-    "label": "Κυρ 3 Μαΐ 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.date-12h": {
-    "label": "Κυρ 3 Μαΐ 2:30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.week": {
-    "label": "3 Μαΐ Ε18 2026"
-  },
-  "trigger.appearance.top-bar.indicators.clock.iso": {
-    "label": "2026-05-03 14:30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-24h": {
-    "label": "14 — 30"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-12h": {
-    "label": "2 — 30 PM"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-date": {
-    "label": "03 Μαΐ Ε18 '26"
-  },
-  "trigger.appearance.top-bar.indicators.clock.stacked-time": {
-    "label": "14 30"
-  },
-  "trigger.appearance.top-bar.position.top": {
-    "label": "Πάνω γραμμή"
-  },
-  "trigger.appearance.top-bar.position.bottom": {
-    "label": "Κάτω γραμμή"
-  },
-  "trigger.appearance.top-bar.position.left": {
-    "label": "Αριστερή γραμμή"
-  },
-  "trigger.appearance.top-bar.position.right": {
-    "label": "Δεξιά γραμμή"
-  },
-  "trigger.appearance.dock": {
-    "label": "Dock"
-  },
-  "trigger.appearance.dock.autohide": {
-    "label": "Αυτόματη απόκρυψη dock"
-  },
-  "trigger.appearance.dock.always-on": {
-    "label": "Πάντα ορατό dock"
-  },
-  "trigger.appearance.dock.position": {
-    "label": "Θέση dock"
-  },
-  "trigger.appearance.dock.position.top": {
-    "label": "Πάνω dock"
-  },
-  "trigger.appearance.dock.position.bottom": {
-    "label": "Κάτω dock"
-  },
-  "trigger.appearance.dock.position.left": {
-    "label": "Αριστερό dock"
-  },
-  "trigger.appearance.dock.position.right": {
-    "label": "Δεξί dock"
-  },
-  "trigger.appearance.window-gaps": {
-    "label": "Κενά παραθύρων"
-  },
-  "trigger.appearance.window-corners": {
-    "label": "Γωνίες παραθύρων"
-  },
-  "trigger.appearance.window-corners.theme": {
-    "label": "Γωνίες θέματος"
-  },
-  "trigger.appearance.window-corners.sharp": {
-    "label": "Οξείες γωνίες"
-  },
-  "trigger.appearance.window-corners.rounded": {
-    "label": "Στρογγυλές γωνίες"
-  },
-  "trigger.appearance.window-transparency": {
-    "label": "Αδιαφάνεια παραθύρων"
-  },
-  "trigger.appearance.window-transparency.opaque": {
-    "label": "Αδιαφανή παράθυρα"
-  },
-  "trigger.appearance.window-transparency.transparent": {
-    "label": "Διάφανα παράθυρα"
-  },
-  "trigger.appearance.window-transparency.glassy": {
-    "label": "Γυάλινα παράθυρα"
-  },
-  "trigger.appearance.one-window-ratio": {
-    "label": "Λόγος 1 παραθύρου"
-  },
-  "trigger.appearance.workspace-layout": {
-    "label": "Διάταξη χώρου",
-    "title": "Προεπιλεγμένη διάταξη χώρου"
-  },
-  "trigger.appearance.workspace-layout.dwindle": {
-    "label": "Πλακιδωτή"
-  },
-  "trigger.appearance.workspace-layout.scrolling": {
-    "label": "Κύλιση"
-  },
-  "trigger.appearance.workspace-layout.floating": {
-    "label": "Αιωρούμενα"
-  },
-  "trigger.appearance.theme-sync": {
-    "label": "Συγχρονισμός θέματος Herdr"
   },
   "trigger.toggle": {
     "label": "Εναλλαγή"
@@ -369,43 +203,209 @@
   "trigger.tests.disk-speedtest": {
     "label": "Δοκιμή ταχύτητας δίσκου"
   },
-  "style.theme": {
+  "setup.appearance": {
+    "label": "Εμφάνιση"
+  },
+  "setup.appearance.animations": {
+    "label": "Κινήσεις"
+  },
+  "setup.appearance.top-bar": {
+    "label": "Γραμμή μενού"
+  },
+  "setup.appearance.top-bar.hide": {
+    "label": "Απόκρυψη γραμμής"
+  },
+  "setup.appearance.top-bar.show": {
+    "label": "Εμφάνιση γραμμής"
+  },
+  "setup.appearance.top-bar.position": {
+    "label": "Θέση γραμμής"
+  },
+  "setup.appearance.top-bar.background": {
+    "label": "Φόντο γραμμής"
+  },
+  "setup.appearance.top-bar.background.opaque": {
+    "label": "Αδιαφανής γραμμή"
+  },
+  "setup.appearance.top-bar.background.glassy": {
+    "label": "Γυάλινη γραμμή"
+  },
+  "setup.appearance.top-bar.background.clear": {
+    "label": "Διάφανη γραμμή"
+  },
+  "setup.appearance.top-bar.indicators": {
+    "label": "Ενδείξεις γραμμής"
+  },
+  "setup.appearance.top-bar.indicators.battery-percentage": {
+    "label": "Ποσοστό μπαταρίας"
+  },
+  "setup.appearance.top-bar.indicators.clock": {
+    "label": "Ρολόι"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-24h": {
+    "label": "Κυριακή 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-12h": {
+    "label": "Κυριακή 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-24h": {
+    "label": "Κυριακή 14:30:05"
+  },
+  "setup.appearance.top-bar.indicators.clock.sunday-seconds-12h": {
+    "label": "Κυριακή 2:30:05 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-24h": {
+    "label": "14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.time-12h": {
+    "label": "2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-24h": {
+    "label": "Κυρ 3 Μαΐ 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.date-12h": {
+    "label": "Κυρ 3 Μαΐ 2:30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.week": {
+    "label": "3 Μαΐ Ε18 2026"
+  },
+  "setup.appearance.top-bar.indicators.clock.iso": {
+    "label": "2026-05-03 14:30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-24h": {
+    "label": "14 — 30"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-12h": {
+    "label": "2 — 30 PM"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-date": {
+    "label": "03 Μαΐ Ε18 '26"
+  },
+  "setup.appearance.top-bar.indicators.clock.stacked-time": {
+    "label": "14 30"
+  },
+  "setup.appearance.top-bar.position.top": {
+    "label": "Πάνω γραμμή"
+  },
+  "setup.appearance.top-bar.position.bottom": {
+    "label": "Κάτω γραμμή"
+  },
+  "setup.appearance.top-bar.position.left": {
+    "label": "Αριστερή γραμμή"
+  },
+  "setup.appearance.top-bar.position.right": {
+    "label": "Δεξιά γραμμή"
+  },
+  "setup.appearance.dock": {
+    "label": "Dock"
+  },
+  "setup.appearance.dock.autohide": {
+    "label": "Αυτόματη απόκρυψη dock"
+  },
+  "setup.appearance.dock.always-on": {
+    "label": "Πάντα ορατό dock"
+  },
+  "setup.appearance.dock.position": {
+    "label": "Θέση dock"
+  },
+  "setup.appearance.dock.position.top": {
+    "label": "Πάνω dock"
+  },
+  "setup.appearance.dock.position.bottom": {
+    "label": "Κάτω dock"
+  },
+  "setup.appearance.dock.position.left": {
+    "label": "Αριστερό dock"
+  },
+  "setup.appearance.dock.position.right": {
+    "label": "Δεξί dock"
+  },
+  "setup.appearance.window-gaps": {
+    "label": "Κενά παραθύρων"
+  },
+  "setup.appearance.window-corners": {
+    "label": "Γωνίες παραθύρων"
+  },
+  "setup.appearance.window-corners.theme": {
+    "label": "Γωνίες θέματος"
+  },
+  "setup.appearance.window-corners.sharp": {
+    "label": "Οξείες γωνίες"
+  },
+  "setup.appearance.window-corners.rounded": {
+    "label": "Στρογγυλές γωνίες"
+  },
+  "setup.appearance.window-transparency": {
+    "label": "Αδιαφάνεια παραθύρων"
+  },
+  "setup.appearance.window-transparency.opaque": {
+    "label": "Αδιαφανή παράθυρα"
+  },
+  "setup.appearance.window-transparency.transparent": {
+    "label": "Διάφανα παράθυρα"
+  },
+  "setup.appearance.window-transparency.glassy": {
+    "label": "Γυάλινα παράθυρα"
+  },
+  "setup.appearance.one-window-ratio": {
+    "label": "Λόγος 1 παραθύρου"
+  },
+  "setup.appearance.workspace-layout": {
+    "label": "Διάταξη χώρου",
+    "title": "Προεπιλεγμένη διάταξη χώρου"
+  },
+  "setup.appearance.workspace-layout.dwindle": {
+    "label": "Πλακιδωτή"
+  },
+  "setup.appearance.workspace-layout.scrolling": {
+    "label": "Κύλιση"
+  },
+  "setup.appearance.workspace-layout.floating": {
+    "label": "Αιωρούμενα"
+  },
+  "setup.appearance.theme-sync": {
+    "label": "Συγχρονισμός θέματος Herdr"
+  },
+  "setup.style": {
+    "label": "Στυλ"
+  },
+  "setup.style.theme": {
     "label": "Θέμα"
   },
-  "style.background": {
+  "setup.style.background": {
     "label": "Φόντο"
   },
-  "style.unlock": {
+  "setup.style.unlock": {
     "label": "Ξεκλείδωμα"
   },
-  "style.font": {
+  "setup.style.font": {
     "label": "Γραμματοσειρά"
   },
-  "style.hyprland": {
+  "setup.style.hyprland": {
     "label": "Hyprland"
   },
-  "style.screensaver": {
+  "setup.style.screensaver": {
     "label": "Προφύλαξη οθόνης"
   },
-  "style.about": {
+  "setup.style.about": {
     "label": "Σχετικά"
   },
-  "style.about.text": {
+  "setup.style.about.text": {
     "label": "Επεξεργασία κειμένου"
   },
-  "style.about.image": {
+  "setup.style.about.image": {
     "label": "Ορισμός από εικόνα"
   },
-  "style.about.default": {
+  "setup.style.about.default": {
     "label": "Επαναφορά προεπιλογής"
   },
-  "style.screensaver.text": {
+  "setup.style.screensaver.text": {
     "label": "Επεξεργασία κειμένου"
   },
-  "style.screensaver.image": {
+  "setup.style.screensaver.image": {
     "label": "Ορισμός από εικόνα"
   },
-  "style.screensaver.default": {
+  "setup.style.screensaver.default": {
     "label": "Επαναφορά προεπιλογής"
   },
   "setup.monitors": {
@@ -480,6 +480,9 @@
   },
   "setup.default.agent.hermes": {
     "label": "Hermes"
+  },
+  "setup.default.agent.kimi": {
+    "label": "Kimi"
   },
   "setup.default.agent.muse": {
     "label": "Muse Code"
@@ -1210,8 +1213,5 @@
   },
   "system.reboot-boot-menu": {
     "label": "Επανεκκίνηση στο μενού εκκίνησης"
-  },
-  "setup.default.agent.kimi": {
-    "label": "Kimi"
   }
 }
