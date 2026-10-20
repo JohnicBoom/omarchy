@@ -7,8 +7,10 @@
 # which conflict with both of those libraries. The first ControlVault open can
 # flash firmware inside fprintd's startup, so setup raises that start timeout
 # before it restarts the daemon. A restart that still times out must not skip
-# enrollment. The real omarchy-pkg-missing runs; pacman, yay, and the
-# privileged calls are stubbed.
+# enrollment. A second restart happens only when that service is already
+# active, so a start still in progress is not killed. After yay, setup checks
+# that pacman actually registered each package. The real omarchy-pkg-missing
+# runs; pacman, yay, and the privileged calls are stubbed.
 
 set -euo pipefail
 
@@ -40,6 +42,16 @@ STUB
 cat > "$scratch/bin/yay" <<'STUB'
 #!/bin/bash
 printf 'yay %s\n' "$*" >> "$CALL_LOG"
+if [[ ${YAY_STATUS:-0} == 0 && ${YAY_REGISTER:-1} == 1 ]]; then
+  past_separator=0
+  for arg in "$@"; do
+    if (( past_separator )); then
+      printf '%s\n' "$arg" >> "$CALL_LOG.installed"
+    elif [[ $arg == "--" ]]; then
+      past_separator=1
+    fi
+  done
+fi
 exit "${YAY_STATUS:-0}"
 STUB
 cat > "$scratch/bin/fprintd-list" <<'STUB'
@@ -53,6 +65,14 @@ case "$1" in
   pacman | fprintd-enroll) exec "$@" ;;
   systemctl)
     printf 'systemctl %s\n' "${*:2}" >> "$CALL_LOG"
+    if [[ $2 == is-active ]]; then
+      if [[ -n ${FPRINTD_ACTIVE+x} ]]; then
+        [[ $FPRINTD_ACTIVE == 1 ]]
+      else
+        [[ ${SYSTEMCTL_STATUS:-0} == 0 ]]
+      fi
+      exit
+    fi
     if [[ ${SYSTEMCTL_STATUS:-0} != 0 && $2 == restart ]]; then
       exit "$SYSTEMCTL_STATUS"
     fi
@@ -81,7 +101,8 @@ case "$1" in
     else
       shift
     fi
-    grep -qx -- "$1" <<< "${INSTALLED:-}"
+    grep -qx -- "$1" <<< "${INSTALLED:-}" && exit 0
+    [[ -f $CALL_LOG.installed ]] && grep -qx -- "$1" "$CALL_LOG.installed"
     ;;
   -S)
     printf 'pacman %s\n' "$*" >> "$CALL_LOG"
@@ -122,7 +143,7 @@ chmod +x "$setup_script"
 
 run_setup() {
   : > "$CALL_LOG"
-  rm -f "$CALL_LOG.dropin"
+  rm -f "$CALL_LOG.dropin" "$CALL_LOG.installed"
   if OMARCHY_PATH="$scratch" "$setup_script" > "$scratch/output" 2>&1; then
     fail "setup stops on the simulated enrollment or installation failure"
   fi
@@ -148,6 +169,7 @@ assert_controlvault_installs() {
     fail "$1: ControlVault setup does not install libfprint-git"
   fi
   (( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 2 )) || fail "$1: restarts fprintd around the firmware check"
+  grep -qx 'systemctl is-active --quiet fprintd' "$CALL_LOG" || fail "$1: restarts again only when the reader service is active"
   grep -qx list "$CALL_LOG" || fail "$1: opens the reader before enrollment"
   grep -qx 'mkdir -p /etc/systemd/system/fprintd.service.d' "$CALL_LOG" || fail "$1: creates the fprintd drop-in directory"
   grep -qx dropin "$CALL_LOG" || fail "$1: raises the fprintd start timeout"
@@ -228,6 +250,13 @@ if grep -Eq '^(list|enroll)$' "$CALL_LOG"; then
 fi
 pass "a failed ControlVault install stops before the reader is opened"
 
+CONTROLVAULT_STATUS=0 YAY_REGISTER=0 run_setup
+if grep -Eq '^(list|enroll)$' "$CALL_LOG"; then
+  fail "a driver yay reports installed, but pacman does not, is not enrolled"
+fi
+grep -q "Package 'fprintd' did not install" "$scratch/output" || fail "a missing registration names the package"
+pass "a driver yay reports installed, but pacman does not, stops before the reader is opened"
+
 CONTROLVAULT_STATUS=0 X86_STATUS=1 run_setup
 if grep -Eq '^(yay |list$|enroll$)' "$CALL_LOG"; then
   fail "ControlVault setup on non-x86 stops before installing"
@@ -253,6 +282,7 @@ grep -qx enroll "$CALL_LOG" || fail "an installed ControlVault driver still enro
 pass "an installed ControlVault driver enrolls while the AUR is unreachable"
 
 : > "$CALL_LOG"
+rm -f "$CALL_LOG.installed"
 OMARCHY_PATH="$scratch" CONTROLVAULT_STATUS=0 ENROLL_STATUS=0 VERIFY_STATUS=0 \
   "$setup_script" > "$scratch/output" 2>&1 || fail "ControlVault enrollment configures authentication"
 [[ $(grep -E '^(enroll|verify|apply-lock)$' "$CALL_LOG") == $'enroll\nverify\napply-lock' ]] ||
@@ -271,6 +301,9 @@ if grep -qx 'systemctl daemon-reload' "$CALL_LOG"; then
   fail "an existing 240s start timeout does not reload systemd"
 fi
 grep -qx enroll "$CALL_LOG" || fail "an existing start timeout still reaches enrollment"
+if grep -q 'couple of minutes' "$scratch/output"; then
+  fail "an existing start timeout does not repeat the firmware warning"
+fi
 pass "an existing 240s start timeout is left in place"
 
 printf '[Service]\nTimeoutStartSec=90\n' > "$dropin"
@@ -283,4 +316,12 @@ rm -f "$dropin"
 CONTROLVAULT_STATUS=0 SYSTEMCTL_STATUS=1 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
 grep -qx enroll "$CALL_LOG" || fail "a slow reader start still reaches enrollment"
 grep -q 'still starting' "$scratch/output" || fail "a slow reader start says enrollment will wait"
+(( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 1 )) || fail "a slow reader start does not restart a start still in progress"
+grep -qx 'systemctl is-active --quiet fprintd' "$CALL_LOG" || fail "a slow reader start checks whether the service came up"
 pass "a slow reader start still reaches enrollment"
+
+CONTROLVAULT_STATUS=0 FPRINTD_ACTIVE=0 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+grep -qx enroll "$CALL_LOG" || fail "an inactive reader service still reaches enrollment"
+(( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 1 )) || fail "an inactive reader service is not restarted again"
+grep -qx 'systemctl is-active --quiet fprintd' "$CALL_LOG" || fail "an inactive reader service was probed"
+pass "an inactive reader service is not restarted again"

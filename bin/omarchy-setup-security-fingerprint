@@ -79,7 +79,16 @@ install_controlvault3_driver() {
     # --useask accepts replacing libfprint or libfprint-git. --noconfirm alone
     # answers that prompt with N, which leaves the reader on a library that
     # cannot see it. --pgpfetch imports the TOD library's signed-tag key.
+    # --sudoloop keeps sudo alive through the build.
     yay -S --needed --noconfirm --useask --pgpfetch --sudoloop -- fprintd usbutils libfprint-tod libfprint-2-tod1-broadcom
+    # yay can exit 0 without pacman registering the package. Name the one that
+    # is missing instead of continuing into a confusing enrollment failure.
+    for pkg in fprintd usbutils libfprint-tod libfprint-2-tod1-broadcom; do
+      if ! pacman -Q -- "$pkg" &>/dev/null; then
+        echo -e "\033[31mError: Package '$pkg' did not install\033[0m" >&2
+        exit 1
+      fi
+    done
   fi
 }
 
@@ -87,11 +96,15 @@ prepare_controlvault3() {
   # The first open flashes ControlVault firmware inside fprintd's startup,
   # before the daemon claims its bus name. systemd's 90s start timeout killed
   # that on a Latitude 5540 after the write, during the chip reset. A longer
-  # start bound lets it finish. Leave TimeoutStopSec alone: 10-stop-timeout.conf
-  # sets it to 3s so a stuck reader cannot block suspend, and this later
-  # drop-in would override that if it set the same key.
+  # start bound lets the flash finish, including a later one. A wedged reader
+  # can now delay pam_fprintd, and the password behind it, for 4 minutes
+  # instead of 90. Leave TimeoutStopSec alone: 10-stop-timeout.conf sets it to
+  # 3s so a stuck reader cannot block suspend, and this later drop-in would
+  # override that if it set the same key.
   local dropin=/etc/systemd/system/fprintd.service.d/20-controlvault-start-timeout.conf
+  local first_start=0
   if [[ ! -f $dropin ]] || ! grep -q '^TimeoutStartSec=240$' "$dropin"; then
+    first_start=1
     sudo mkdir -p /etc/systemd/system/fprintd.service.d
     sudo tee "$dropin" >/dev/null <<'EOF'
 # The first open flashes ControlVault firmware inside fprintd's startup.
@@ -101,15 +114,22 @@ TimeoutStartSec=240
 EOF
     sudo systemctl daemon-reload
   fi
-  # Opening the device once, then starting fprintd again, is what makes
-  # enrollment see a reader. A later run finds the firmware current and the
-  # extra restart is only a moment. A restart can still report failure after
-  # the firmware write if the chip reset runs long. Enrollment only needs the
-  # daemon up afterwards, so keep going.
-  echo "Checking the reader. The first time can take a couple of minutes while its firmware updates. Leave the laptop on."
+  # The first restart is the firmware flash. It blocks until fprintd claims
+  # its bus name, then the open leaves the device half-initialized until a
+  # second start. That second restart waits until the daemon is active.
+  # Restarting a start still in progress SIGKILLs it after the 3s stop
+  # timeout, in the middle of a firmware write. The list waits out the same
+  # 240s budget, so it does not give up while that first start is running.
+  if (( first_start )); then
+    echo "Checking the reader. The first time can take a couple of minutes while its firmware updates. Leave the laptop on."
+  else
+    echo "Checking the reader."
+  fi
   sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
-  timeout 180 fprintd-list "$USER" || true
-  sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
+  timeout 240 fprintd-list "$USER" || true
+  if sudo systemctl is-active --quiet fprintd; then
+    sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
+  fi
 }
 
 echo -e "\e[32mSetting up fingerprint scanner for authentication.\n\e[0m"

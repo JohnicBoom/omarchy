@@ -12,6 +12,8 @@ fingerprint_vendors=" 27c6 138a 06cb 08ff 1c7a 147e "
 # USB ids from Broadcom's 60-libfprint-2-device-broadcom.rules. The same
 # string lives in omarchy-hw-fingerprint-controlvault3; a test fails if the
 # two drift. ControlVault 3+ (0a5c:586x) is a different driver and stays out.
+# The menu runs this script on every open, so the check stays in-process
+# instead of spawning that other command.
 controlvault3_products=" 5842 5843 5844 5845 "
 usb_devices_path="${OMARCHY_USB_DEVICES_PATH:-/sys/bus/usb/devices}"
 
@@ -70,6 +72,8 @@ for dev in "$usb_devices_path"/*; do
   # puts "FingerPrint" on an interface, so the name match above never sees a
   # Dell Latitude 5540. 0a5c stays out of the vendor list: Broadcom also makes
   # the radios in these laptops. These four ids are the reader itself.
+  # The kernel-driver check below is skipped on purpose. The same device has a
+  # contacted smartcard interface, and a driver bound there would hide the reader.
   if [[ -r $dev/idVendor && -r $dev/idProduct ]]; then
     vendor=$(<"$dev/idVendor")
     product_id=$(<"$dev/idProduct")
