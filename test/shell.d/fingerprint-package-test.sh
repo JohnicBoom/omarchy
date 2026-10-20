@@ -242,6 +242,16 @@ fi
 grep -q 'AUR, which is unreachable' "$scratch/output" || fail "ControlVault setup explains an unreachable AUR"
 pass "ControlVault setup stops when the AUR is unreachable"
 
+CONTROLVAULT_STATUS=0 AUR_ACCESS_STATUS=1 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+if grep -qx aur-access "$CALL_LOG"; then
+  fail "an installed ControlVault driver does not consult the AUR"
+fi
+if grep -q '^yay ' "$CALL_LOG"; then
+  fail "an installed ControlVault driver does not download when the AUR is unreachable"
+fi
+grep -qx enroll "$CALL_LOG" || fail "an installed ControlVault driver still enrolls when the AUR is unreachable"
+pass "an installed ControlVault driver enrolls while the AUR is unreachable"
+
 : > "$CALL_LOG"
 OMARCHY_PATH="$scratch" CONTROLVAULT_STATUS=0 ENROLL_STATUS=0 VERIFY_STATUS=0 \
   "$setup_script" > "$scratch/output" 2>&1 || fail "ControlVault enrollment configures authentication"

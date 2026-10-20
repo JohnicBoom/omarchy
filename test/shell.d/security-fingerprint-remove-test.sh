@@ -19,7 +19,7 @@ output="$test_tmp/output"
 sed -e "s|/etc/pam.d/|$test_tmp/etc/pam.d/|g" \
   -e "s|/var/lib/fprint/|$test_tmp/fprint/|g" \
   -e "s|/usr/bin/id|$test_tmp/trusted-id|g" \
-  -e "s|/etc/systemd/system/fprintd.service.d/|$test_tmp/systemd/|g" \
+  -e "s|/etc/systemd/system/fprintd.service.d|$test_tmp/systemd|g" \
   -e "s|/usr/lib/systemd/system-sleep/|$test_tmp/system-sleep/|g" "$remove" >"$copy"
 
 cat >"$test_tmp/trusted-id" <<'SH'
@@ -43,9 +43,20 @@ SH
 cat >"$test_tmp/bin/sudo" <<'SH'
 #!/bin/bash
 printf 'sudo %s\n' "$*" >>"$TEST_LOG"
-[[ $# == 4 && $1 == rm && $2 == -rf && $3 == -- && $4 == "$TEST_FPRINT/$TEST_EXPECTED_USER" ]] || exit 91
-[[ ${TEST_DELETE_FAIL:-0} == 0 ]] || exit 92
-exec /usr/bin/rm -rf -- "$4"
+if [[ $# == 4 && $1 == rm && $2 == -rf && $3 == -- && $4 == "$TEST_FPRINT/$TEST_EXPECTED_USER" ]]; then
+  [[ ${TEST_DELETE_FAIL:-0} == 0 ]] || exit 92
+  exec /usr/bin/rm -rf -- "$4"
+fi
+if [[ $# == 3 && $1 == rm && $2 == -f && $3 == "$TEST_SYSTEMD/20-controlvault-start-timeout.conf" ]]; then
+  exec /usr/bin/rm -f -- "$3"
+fi
+if [[ $# == 3 && $1 == rm && $2 == -f && $3 == "$TEST_SYSTEMD/10-stop-timeout.conf" ]]; then
+  exec /usr/bin/rm -f -- "$3"
+fi
+if [[ $# == 3 && $1 == rmdir && $2 == --ignore-fail-on-non-empty && $3 == "$TEST_SYSTEMD" ]]; then
+  exec /usr/bin/rmdir --ignore-fail-on-non-empty "$3"
+fi
+[[ $# == 2 && $1 == systemctl && $2 == daemon-reload ]] || exit 91
 SH
 cat >"$test_tmp/bin/omarchy-pkg-drop" <<'SH'
 #!/bin/bash
@@ -74,7 +85,7 @@ run_remove() {
   local sudo_env=()
   [[ -v SUDO_UID ]] && sudo_env=("SUDO_UID=$SUDO_UID")
   local fixture_env=(
-    "TEST_LOG=$log" "TEST_FPRINT=$test_tmp/fprint" "TEST_EXPECTED_USER=$expected"
+    "TEST_LOG=$log" "TEST_FPRINT=$test_tmp/fprint" "TEST_SYSTEMD=$test_tmp/systemd" "TEST_EXPECTED_USER=$expected"
     "TEST_DIRECT_USER=$direct_user" "TEST_SUDO_USER=$sudo_user" "TEST_SUDO_UID=${SUDO_UID:-}"
     "TEST_ID_FAIL=${id_fail:-0}" "TEST_DELETE_FAIL=${delete_fail:-0}"
     "TEST_PACKAGE_FAIL=${package_fail:-0}" "USER=spoofed" "SUDO_USER=spoofed"
@@ -120,6 +131,19 @@ pass "absolute system id ignores malicious PATH id"
 
 run_remove || fail "missing fingerprint directory is idempotent" "$(cat "$output")"
 pass "missing user directory succeeds"
+
+mkdir -p "$test_tmp/systemd" "$test_tmp/fprint/alice"
+printf '[Service]\nTimeoutStartSec=240\n' >"$test_tmp/systemd/20-controlvault-start-timeout.conf"
+run_remove || fail "ControlVault start timeout removal succeeds" "$(cat "$output")"
+[[ ! -e $test_tmp/systemd/20-controlvault-start-timeout.conf ]] ||
+  fail "ControlVault start timeout file is removed"
+[[ ! -d $test_tmp/systemd ]] ||
+  fail "empty fprintd drop-in directory is removed"
+grep -Fq "sudo rm -f $test_tmp/systemd/20-controlvault-start-timeout.conf" "$log" ||
+  fail "ControlVault start timeout removal deletes the drop-in"
+grep -Fq 'sudo systemctl daemon-reload' "$log" ||
+  fail "ControlVault start timeout removal reloads systemd"
+pass "ControlVault start timeout is removed and systemd is reloaded"
 
 delete_fail=1
 run_remove && fail "deletion failure must fail removal"

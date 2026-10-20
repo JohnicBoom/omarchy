@@ -68,11 +68,13 @@ install_controlvault3_driver() {
     echo -e "\e[31mThe ControlVault 3 fingerprint driver is only available on x86_64.\e[0m" >&2
     exit 1
   fi
-  if ! omarchy-pkg-aur-accessible; then
-    echo -e "\e[31mThe ControlVault 3 driver is on the AUR, which is unreachable right now.\e[0m" >&2
-    exit 1
-  fi
   if omarchy-pkg-missing fprintd usbutils libfprint-tod libfprint-2-tod1-broadcom; then
+    # A machine that already has the driver can enroll offline. The AUR is
+    # only needed for the download, so check it after the packages.
+    if ! omarchy-pkg-aur-accessible; then
+      echo -e "\e[31mThe ControlVault 3 driver is on the AUR, which is unreachable right now.\e[0m" >&2
+      exit 1
+    fi
     echo "Installing the ControlVault 3 fingerprint driver..."
     # --useask accepts replacing libfprint or libfprint-git. --noconfirm alone
     # answers that prompt with N, which leaves the reader on a library that
