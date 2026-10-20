@@ -14,9 +14,13 @@ output="$test_tmp/output"
 
 (( $(grep -Fxc 'sudo rm -rf -- "/var/lib/fprint/$fingerprint_user"' "$remove") == 1 )) ||
   fail "fingerprint removal has one fixed deletion path"
+(( $(grep -Fc 'sudo rm -f /etc/systemd/system/fprintd.service.d/20-controlvault-start-timeout.conf' "$remove") == 1 )) ||
+  fail "fingerprint removal deletes the ControlVault start timeout"
 sed -e "s|/etc/pam.d/|$test_tmp/etc/pam.d/|g" \
   -e "s|/var/lib/fprint/|$test_tmp/fprint/|g" \
-  -e "s|/usr/bin/id|$test_tmp/trusted-id|g" "$remove" >"$copy"
+  -e "s|/usr/bin/id|$test_tmp/trusted-id|g" \
+  -e "s|/etc/systemd/system/fprintd.service.d/|$test_tmp/systemd/|g" \
+  -e "s|/usr/lib/systemd/system-sleep/|$test_tmp/system-sleep/|g" "$remove" >"$copy"
 
 cat >"$test_tmp/trusted-id" <<'SH'
 #!/bin/bash

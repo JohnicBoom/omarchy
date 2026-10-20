@@ -82,14 +82,32 @@ install_controlvault3_driver() {
 }
 
 prepare_controlvault3() {
-  # The first time the device is opened, the driver flashes the ControlVault
-  # and then leaves it half-initialized. Opening it once, then starting
-  # fprintd again, is what makes enrollment see a reader. A later run finds
-  # the firmware current and the extra restart is only a moment.
-  echo "Checking the reader. The first time can take about a minute while its firmware updates. Leave the laptop on."
-  sudo systemctl restart fprintd
+  # The first open flashes ControlVault firmware inside fprintd's startup,
+  # before the daemon claims its bus name. systemd's 90s start timeout killed
+  # that on a Latitude 5540 after the write, during the chip reset. A longer
+  # start bound lets it finish. Leave TimeoutStopSec alone: 10-stop-timeout.conf
+  # sets it to 3s so a stuck reader cannot block suspend, and this later
+  # drop-in would override that if it set the same key.
+  local dropin=/etc/systemd/system/fprintd.service.d/20-controlvault-start-timeout.conf
+  if [[ ! -f $dropin ]] || ! grep -q '^TimeoutStartSec=240$' "$dropin"; then
+    sudo mkdir -p /etc/systemd/system/fprintd.service.d
+    sudo tee "$dropin" >/dev/null <<'EOF'
+# The first open flashes ControlVault firmware inside fprintd's startup.
+# The default start timeout kills the daemon mid-write.
+[Service]
+TimeoutStartSec=240
+EOF
+    sudo systemctl daemon-reload
+  fi
+  # Opening the device once, then starting fprintd again, is what makes
+  # enrollment see a reader. A later run finds the firmware current and the
+  # extra restart is only a moment. A restart can still report failure after
+  # the firmware write if the chip reset runs long. Enrollment only needs the
+  # daemon up afterwards, so keep going.
+  echo "Checking the reader. The first time can take a couple of minutes while its firmware updates. Leave the laptop on."
+  sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
   timeout 180 fprintd-list "$USER" || true
-  sudo systemctl restart fprintd
+  sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
 }
 
 echo -e "\e[32mSetting up fingerprint scanner for authentication.\n\e[0m"

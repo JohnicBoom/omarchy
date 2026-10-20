@@ -4,8 +4,11 @@
 # two conflict, so the swap has to happen inside one --ask 4 transaction, and a
 # rerun with everything installed must not touch pacman at all. A Broadcom
 # ControlVault 3 reader instead installs libfprint-tod and Broadcom's plugin,
-# which conflict with both of those libraries. The real omarchy-pkg-missing
-# runs; pacman, yay, and the privileged calls are stubbed.
+# which conflict with both of those libraries. The first ControlVault open can
+# flash firmware inside fprintd's startup, so setup raises that start timeout
+# before it restarts the daemon. A restart that still times out must not skip
+# enrollment. The real omarchy-pkg-missing runs; pacman, yay, and the
+# privileged calls are stubbed.
 
 set -euo pipefail
 
@@ -48,9 +51,23 @@ cat > "$scratch/bin/sudo" <<'STUB'
 #!/bin/bash
 case "$1" in
   pacman | fprintd-enroll) exec "$@" ;;
-  systemctl) printf 'systemctl %s\n' "${*:2}" >> "$CALL_LOG" ;;
+  systemctl)
+    printf 'systemctl %s\n' "${*:2}" >> "$CALL_LOG"
+    if [[ ${SYSTEMCTL_STATUS:-0} != 0 && $2 == restart ]]; then
+      exit "$SYSTEMCTL_STATUS"
+    fi
+    ;;
   sed) printf 'pam %s\n' "$*" >> "$CALL_LOG" ;;
-  tee) printf 'pam %s\n' "$*" >> "$CALL_LOG"; cat >/dev/null ;;
+  mkdir) printf 'mkdir %s\n' "${*:2}" >> "$CALL_LOG" ;;
+  tee)
+    if [[ $* == *controlvault* ]]; then
+      printf 'dropin\n' >> "$CALL_LOG"
+      cat > "$CALL_LOG.dropin"
+    else
+      printf 'pam %s\n' "$*" >> "$CALL_LOG"
+      cat >/dev/null
+    fi
+    ;;
   *) echo "Unexpected privileged call: $*" >> "$CALL_LOG"; exit 99 ;;
 esac
 STUB
@@ -96,12 +113,16 @@ STUB
 chmod +x "$scratch/bin/omarchy-apply-lock"
 
 export TEST_LOCK_PAM="$scratch/omarchy-lock-fingerprint"
+dropin="$scratch/fprintd.service.d/20-controlvault-start-timeout.conf"
 setup_script="$scratch/omarchy-setup-security-fingerprint"
-sed "s|/etc/pam.d/omarchy-lock-fingerprint|$TEST_LOCK_PAM|g" "$ROOT/bin/omarchy-setup-security-fingerprint" > "$setup_script"
+sed -e "s|/etc/pam.d/omarchy-lock-fingerprint|$TEST_LOCK_PAM|g" \
+  -e "s|/etc/systemd/system/fprintd.service.d/20-controlvault-start-timeout.conf|$dropin|g" \
+  "$ROOT/bin/omarchy-setup-security-fingerprint" > "$setup_script"
 chmod +x "$setup_script"
 
 run_setup() {
   : > "$CALL_LOG"
+  rm -f "$CALL_LOG.dropin"
   if OMARCHY_PATH="$scratch" "$setup_script" > "$scratch/output" 2>&1; then
     fail "setup stops on the simulated enrollment or installation failure"
   fi
@@ -126,8 +147,15 @@ assert_controlvault_installs() {
   if grep -q '^pacman ' "$CALL_LOG"; then
     fail "$1: ControlVault setup does not install libfprint-git"
   fi
-  grep -qx 'systemctl restart fprintd' "$CALL_LOG" || fail "$1: restarts fprintd around the firmware check"
+  (( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 2 )) || fail "$1: restarts fprintd around the firmware check"
   grep -qx list "$CALL_LOG" || fail "$1: opens the reader before enrollment"
+  grep -qx 'mkdir -p /etc/systemd/system/fprintd.service.d' "$CALL_LOG" || fail "$1: creates the fprintd drop-in directory"
+  grep -qx dropin "$CALL_LOG" || fail "$1: raises the fprintd start timeout"
+  grep -qx 'systemctl daemon-reload' "$CALL_LOG" || fail "$1: reloads systemd after the start timeout"
+  grep -qx 'TimeoutStartSec=240' "$CALL_LOG.dropin" || fail "$1: start timeout is 240 seconds"
+  if grep -q 'TimeoutStopSec' "$CALL_LOG.dropin"; then
+    fail "$1: does not lengthen the stop timeout"
+  fi
 }
 
 run_setup
@@ -191,6 +219,7 @@ if grep -q '^yay ' "$CALL_LOG"; then
 fi
 grep -qx enroll "$CALL_LOG" || fail "a rerun with the ControlVault driver installed reaches enrollment"
 grep -qx list "$CALL_LOG" || fail "a rerun still opens the reader before enrollment"
+grep -qx dropin "$CALL_LOG" || fail "a rerun still raises the fprintd start timeout"
 pass "a rerun with the ControlVault driver installed goes straight to the reader"
 
 CONTROLVAULT_STATUS=0 YAY_STATUS=1 run_setup
@@ -219,4 +248,29 @@ OMARCHY_PATH="$scratch" CONTROLVAULT_STATUS=0 ENROLL_STATUS=0 VERIFY_STATUS=0 \
 [[ $(grep -E '^(enroll|verify|apply-lock)$' "$CALL_LOG") == $'enroll\nverify\napply-lock' ]] ||
   fail "ControlVault setup configures lock recovery once, after enrollment and verification"
 grep -qx "$controlvault_yay" "$CALL_LOG" || fail "successful ControlVault setup installed the Broadcom driver"
+grep -qx dropin "$CALL_LOG" || fail "successful ControlVault setup raises the fprintd start timeout"
 pass "ControlVault setup reuses apply-lock after enrollment and verification"
+
+mkdir -p "$(dirname "$dropin")"
+printf '[Service]\nTimeoutStartSec=240\n' > "$dropin"
+CONTROLVAULT_STATUS=0 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+if grep -qx dropin "$CALL_LOG"; then
+  fail "an existing 240s start timeout is left in place"
+fi
+if grep -qx 'systemctl daemon-reload' "$CALL_LOG"; then
+  fail "an existing 240s start timeout does not reload systemd"
+fi
+grep -qx enroll "$CALL_LOG" || fail "an existing start timeout still reaches enrollment"
+pass "an existing 240s start timeout is left in place"
+
+printf '[Service]\nTimeoutStartSec=90\n' > "$dropin"
+CONTROLVAULT_STATUS=0 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+grep -qx dropin "$CALL_LOG" || fail "a short start timeout is replaced"
+grep -qx 'TimeoutStartSec=240' "$CALL_LOG.dropin" || fail "a short start timeout is raised to 240 seconds"
+pass "a short start timeout is raised to 240 seconds"
+rm -f "$dropin"
+
+CONTROLVAULT_STATUS=0 SYSTEMCTL_STATUS=1 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+grep -qx enroll "$CALL_LOG" || fail "a slow reader start still reaches enrollment"
+grep -q 'still starting' "$scratch/output" || fail "a slow reader start says enrollment will wait"
+pass "a slow reader start still reaches enrollment"
