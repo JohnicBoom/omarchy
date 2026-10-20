@@ -95,7 +95,7 @@ run_remove || fail "direct user removal succeeds" "$(cat "$output")"
   fail "only the invoking user's local files are deleted"
 grep -Fxq 'id -un' "$log" || fail "direct user is resolved through id"
 grep -Fq "sudo rm -rf -- $test_tmp/fprint/alice" "$log" || fail "deletion precedes package drop"
-[[ $(tail -n 1 "$log") == 'package fprintd libfprint libfprint-git' ]] || fail "packages drop after deletion"
+[[ $(tail -n 1 "$log") == 'package fprintd libfprint libfprint-git libfprint-tod libfprint-2-tod1-broadcom' ]] || fail "packages drop after deletion"
 grep -Fq "alice's local saved fingerprints have been removed" "$output" || fail "success describes local saved files"
 pass "direct user ignores spoofed USER and leaves other accounts alone"
 

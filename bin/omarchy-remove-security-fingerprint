@@ -66,6 +66,8 @@ remove_resume_hook
 sudo rm -rf -- "/var/lib/fprint/$fingerprint_user"
 
 echo "Removing fingerprint packages..."
-omarchy-pkg-drop fprintd libfprint libfprint-git
+# libfprint-tod and the Broadcom plugin are what ControlVault 3 setup installs
+# in place of libfprint-git. A name that is not installed is left alone.
+omarchy-pkg-drop fprintd libfprint libfprint-git libfprint-tod libfprint-2-tod1-broadcom
 
 echo -e "\e[32mFingerprint authentication and $fingerprint_user's local saved fingerprints have been removed.\e[0m"

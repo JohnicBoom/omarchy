@@ -56,6 +56,42 @@ EOF
   fi
 }
 
+install_controlvault3_driver() {
+  # Broadcom ControlVault 3 (USB 0a5c:5842-5845) is the fingerprint reader in
+  # the Dell Latitude 5540 and the rest of that generation. libfprint has no
+  # driver for it. The open one (libfprint !620) is still unmerged and needs
+  # Broadcom's firmware either way. The driver that enrolls is Broadcom's
+  # proprietary TOD plugin, published for x86_64 only, and it only loads into
+  # libfprint-tod. That build conflicts with libfprint and with the pinned
+  # libfprint-git every other reader uses, so it has to be its own transaction.
+  if ! omarchy-hw-x86; then
+    echo -e "\e[31mThe ControlVault 3 fingerprint driver is only available on x86_64.\e[0m" >&2
+    exit 1
+  fi
+  if ! omarchy-pkg-aur-accessible; then
+    echo -e "\e[31mThe ControlVault 3 driver is on the AUR, which is unreachable right now.\e[0m" >&2
+    exit 1
+  fi
+  if omarchy-pkg-missing fprintd usbutils libfprint-tod libfprint-2-tod1-broadcom; then
+    echo "Installing the ControlVault 3 fingerprint driver..."
+    # --useask accepts replacing libfprint or libfprint-git. --noconfirm alone
+    # answers that prompt with N, which leaves the reader on a library that
+    # cannot see it. --pgpfetch imports the TOD library's signed-tag key.
+    yay -S --needed --noconfirm --useask --pgpfetch --sudoloop -- fprintd usbutils libfprint-tod libfprint-2-tod1-broadcom
+  fi
+}
+
+prepare_controlvault3() {
+  # The first time the device is opened, the driver flashes the ControlVault
+  # and then leaves it half-initialized. Opening it once, then starting
+  # fprintd again, is what makes enrollment see a reader. A later run finds
+  # the firmware current and the extra restart is only a moment.
+  echo "Checking the reader. The first time can take about a minute while its firmware updates. Leave the laptop on."
+  sudo systemctl restart fprintd
+  timeout 180 fprintd-list "$USER" || true
+  sudo systemctl restart fprintd
+}
+
 echo -e "\e[32mSetting up fingerprint scanner for authentication.\n\e[0m"
 
 # Bail before installing anything if there's no reader to talk to.
@@ -64,13 +100,18 @@ if ! omarchy-hw-fingerprint; then
   exit 1
 fi
 
-# libfprint-git tracks upstream ahead of the Arch release, so a new reader only
-# needs a pin bump in omarchy-pkgs. It conflicts with stock libfprint, and
-# --noconfirm answers that prompt with N; --ask 4 accepts the replacement in
-# one transaction, so a failed install leaves the existing driver in place.
-if omarchy-pkg-missing libfprint-git fprintd usbutils; then
-  echo "Installing required packages..."
-  sudo pacman -S --needed --noconfirm --ask 4 -- libfprint-git fprintd usbutils
+if omarchy-hw-fingerprint-controlvault3; then
+  install_controlvault3_driver
+  prepare_controlvault3
+else
+  # libfprint-git tracks upstream ahead of the Arch release, so a new reader only
+  # needs a pin bump in omarchy-pkgs. It conflicts with stock libfprint, and
+  # --noconfirm answers that prompt with N; --ask 4 accepts the replacement in
+  # one transaction, so a failed install leaves the existing driver in place.
+  if omarchy-pkg-missing libfprint-git fprintd usbutils; then
+    echo "Installing required packages..."
+    sudo pacman -S --needed --noconfirm --ask 4 -- libfprint-git fprintd usbutils
+  fi
 fi
 
 # Enroll first fingerprint

@@ -2,8 +2,10 @@
 #
 # The fingerprint setup installs libfprint-git in place of stock libfprint. The
 # two conflict, so the swap has to happen inside one --ask 4 transaction, and a
-# rerun with everything installed must not touch pacman at all. The real
-# omarchy-pkg-missing runs; pacman and the privileged calls are stubbed.
+# rerun with everything installed must not touch pacman at all. A Broadcom
+# ControlVault 3 reader instead installs libfprint-tod and Broadcom's plugin,
+# which conflict with both of those libraries. The real omarchy-pkg-missing
+# runs; pacman, yay, and the privileged calls are stubbed.
 
 set -euo pipefail
 
@@ -19,10 +21,34 @@ cat > "$scratch/bin/omarchy-hw-fingerprint" <<'STUB'
 #!/bin/bash
 exit "${HARDWARE_STATUS:-0}"
 STUB
+cat > "$scratch/bin/omarchy-hw-fingerprint-controlvault3" <<'STUB'
+#!/bin/bash
+exit "${CONTROLVAULT_STATUS:-1}"
+STUB
+cat > "$scratch/bin/omarchy-hw-x86" <<'STUB'
+#!/bin/bash
+exit "${X86_STATUS:-0}"
+STUB
+cat > "$scratch/bin/omarchy-pkg-aur-accessible" <<'STUB'
+#!/bin/bash
+printf 'aur-access\n' >> "$CALL_LOG"
+exit "${AUR_ACCESS_STATUS:-0}"
+STUB
+cat > "$scratch/bin/yay" <<'STUB'
+#!/bin/bash
+printf 'yay %s\n' "$*" >> "$CALL_LOG"
+exit "${YAY_STATUS:-0}"
+STUB
+cat > "$scratch/bin/fprintd-list" <<'STUB'
+#!/bin/bash
+printf 'list\n' >> "$CALL_LOG"
+exit "${LIST_STATUS:-1}"
+STUB
 cat > "$scratch/bin/sudo" <<'STUB'
 #!/bin/bash
 case "$1" in
   pacman | fprintd-enroll) exec "$@" ;;
+  systemctl) printf 'systemctl %s\n' "${*:2}" >> "$CALL_LOG" ;;
   sed) printf 'pam %s\n' "$*" >> "$CALL_LOG" ;;
   tee) printf 'pam %s\n' "$*" >> "$CALL_LOG"; cat >/dev/null ;;
   *) echo "Unexpected privileged call: $*" >> "$CALL_LOG"; exit 99 ;;
@@ -87,6 +113,21 @@ run_setup() {
 assert_installs() {
   grep -qx 'pacman -S --needed --noconfirm --ask 4 -- libfprint-git fprintd usbutils' "$CALL_LOG" || fail "$1"
   (( $(grep -c '^pacman ' "$CALL_LOG") == 1 )) || fail "$1: one pacman transaction"
+  if grep -q '^yay ' "$CALL_LOG"; then
+    fail "$1: stock readers stay on libfprint-git"
+  fi
+}
+
+controlvault_yay='yay -S --needed --noconfirm --useask --pgpfetch --sudoloop -- fprintd usbutils libfprint-tod libfprint-2-tod1-broadcom'
+
+assert_controlvault_installs() {
+  grep -qx "$controlvault_yay" "$CALL_LOG" || fail "$1"
+  (( $(grep -c '^yay ' "$CALL_LOG") == 1 )) || fail "$1: one driver transaction"
+  if grep -q '^pacman ' "$CALL_LOG"; then
+    fail "$1: ControlVault setup does not install libfprint-git"
+  fi
+  grep -qx 'systemctl restart fprintd' "$CALL_LOG" || fail "$1: restarts fprintd around the firmware check"
+  grep -qx list "$CALL_LOG" || fail "$1: opens the reader before enrollment"
 }
 
 run_setup
@@ -133,3 +174,49 @@ if grep -q 'Perfect!\|You can use your fingerprint' "$scratch/output"; then
   fail "inconclusive setup does not promise fingerprint unlock"
 fi
 pass "an inconclusive lock installer cannot report successful lock setup"
+
+CONTROLVAULT_STATUS=0 run_setup
+assert_controlvault_installs "a ControlVault 3 machine installs the Broadcom driver"
+grep -qx enroll "$CALL_LOG" || fail "ControlVault installation is followed by enrollment"
+grep -q 'firmware' "$scratch/output" || fail "ControlVault setup warns that the first open updates firmware"
+pass "a ControlVault 3 machine installs the Broadcom driver and reaches enrollment"
+
+CONTROLVAULT_STATUS=0 INSTALLED=$'libfprint-git\nfprintd\nusbutils' run_setup
+assert_controlvault_installs "an installed libfprint-git is replaced by the ControlVault driver"
+pass "an installed libfprint-git is replaced by the ControlVault driver"
+
+CONTROLVAULT_STATUS=0 INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+if grep -q '^yay ' "$CALL_LOG"; then
+  fail "a rerun with the ControlVault driver installed does not rebuild it"
+fi
+grep -qx enroll "$CALL_LOG" || fail "a rerun with the ControlVault driver installed reaches enrollment"
+grep -qx list "$CALL_LOG" || fail "a rerun still opens the reader before enrollment"
+pass "a rerun with the ControlVault driver installed goes straight to the reader"
+
+CONTROLVAULT_STATUS=0 YAY_STATUS=1 run_setup
+if grep -Eq '^(list|enroll)$' "$CALL_LOG"; then
+  fail "a failed ControlVault install does not open or enroll the reader"
+fi
+pass "a failed ControlVault install stops before the reader is opened"
+
+CONTROLVAULT_STATUS=0 X86_STATUS=1 run_setup
+if grep -Eq '^(yay |list$|enroll$)' "$CALL_LOG"; then
+  fail "ControlVault setup on non-x86 stops before installing"
+fi
+grep -q 'only available on x86_64' "$scratch/output" || fail "ControlVault setup on non-x86 explains why"
+pass "ControlVault setup on non-x86 stops before installing"
+
+CONTROLVAULT_STATUS=0 AUR_ACCESS_STATUS=1 run_setup
+if grep -Eq '^(yay |list$|enroll$)' "$CALL_LOG"; then
+  fail "ControlVault setup does not install when the AUR is unreachable"
+fi
+grep -q 'AUR, which is unreachable' "$scratch/output" || fail "ControlVault setup explains an unreachable AUR"
+pass "ControlVault setup stops when the AUR is unreachable"
+
+: > "$CALL_LOG"
+OMARCHY_PATH="$scratch" CONTROLVAULT_STATUS=0 ENROLL_STATUS=0 VERIFY_STATUS=0 \
+  "$setup_script" > "$scratch/output" 2>&1 || fail "ControlVault enrollment configures authentication"
+[[ $(grep -E '^(enroll|verify|apply-lock)$' "$CALL_LOG") == $'enroll\nverify\napply-lock' ]] ||
+  fail "ControlVault setup configures lock recovery once, after enrollment and verification"
+grep -qx "$controlvault_yay" "$CALL_LOG" || fail "successful ControlVault setup installed the Broadcom driver"
+pass "ControlVault setup reuses apply-lock after enrollment and verification"
