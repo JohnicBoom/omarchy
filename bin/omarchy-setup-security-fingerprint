@@ -140,18 +140,18 @@ EOF
   # would restart a firmware write.
   local state
   state=$(sudo systemctl is-active fprintd || true)
-  if [[ $state == deactivating ]]; then
+  if [[ $state == "deactivating" ]]; then
     # A start or a restart would replace this stop. Idle exit uses the same
     # state, not only a kill. The stop timeout is 3s; wait past it, then
     # restart even if the name has not changed.
     local waited=0
-    while [[ $state == deactivating && $waited -lt 5 ]]; do
+    while [[ $state == "deactivating" ]] && (( waited < 5 )); do
       sleep 1
       state=$(sudo systemctl is-active fprintd || true)
       waited=$((waited + 1))
     done
   fi
-  if [[ $state == activating ]]; then
+  if [[ $state == "activating" ]]; then
     # Join the start already in progress. A restart would stop it, and the
     # 3s stop timeout would SIGKILL a firmware write.
     sudo systemctl start fprintd || echo "The reader service is still starting. Enrollment will wait for it."
