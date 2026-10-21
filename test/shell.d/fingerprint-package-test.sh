@@ -8,7 +8,9 @@
 # flash firmware inside fprintd's startup, so setup raises that start timeout
 # before it restarts the daemon. A restart that still times out must not skip
 # enrollment. A second restart happens only when that service is already
-# active, so a start still in progress is not killed. After yay, setup checks
+# active, so a start still in progress is not killed. If fprintd is already
+# activating, setup waits on that start instead of restarting it. If it is
+# deactivating, setup waits out the stop, then restarts. After yay, setup checks
 # that pacman actually registered each package. The real omarchy-pkg-missing
 # runs; pacman, yay, and the privileged calls are stubbed.
 
@@ -68,6 +70,11 @@ case "$1" in
   systemctl)
     printf 'systemctl %s\n' "${*:2}" >> "$CALL_LOG"
     if [[ $2 == is-active ]]; then
+      # FPRINTD_STATE is only the non-quiet pre-check. The --quiet call stays
+      # on FPRINTD_ACTIVE / SYSTEMCTL_STATUS, and the log lines stay distinct.
+      if [[ ${3:-} != --quiet && -n ${FPRINTD_STATE:-} ]]; then
+        printf '%s\n' "$FPRINTD_STATE"
+      fi
       if [[ -n ${FPRINTD_ACTIVE+x} ]]; then
         [[ $FPRINTD_ACTIVE == 1 ]]
       else
@@ -341,6 +348,46 @@ grep -qx enroll "$CALL_LOG" || fail "an inactive reader service still reaches en
 (( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 1 )) || fail "an inactive reader service is not restarted again"
 grep -qx 'systemctl is-active --quiet fprintd' "$CALL_LOG" || fail "an inactive reader service was probed"
 pass "an inactive reader service is not restarted again"
+
+# A firmware write still in progress is activating. Restarting it would stop
+# that start and SIGKILL the write after 3s. Setup joins the start instead.
+CONTROLVAULT_STATUS=0 FPRINTD_STATE=activating INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+grep -qx enroll "$CALL_LOG" || fail "a reader start already in progress still reaches enrollment"
+grep -qx 'systemctl start fprintd' "$CALL_LOG" || fail "a reader start already in progress is waited on"
+(( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 1 )) || fail "a reader start already in progress is restarted only once it is active"
+(( $(grep -cx 'systemctl is-active --quiet fprintd' "$CALL_LOG") == 1 )) || fail "the quiet active check stays the post-list restart guard"
+start_at=0
+restart_at=0
+call_n=0
+while IFS= read -r line; do
+  call_n=$((call_n + 1))
+  if [[ $line == 'systemctl start fprintd' && $start_at == 0 ]]; then
+    start_at=$call_n
+  fi
+  if [[ $line == 'systemctl restart fprintd' && $restart_at == 0 ]]; then
+    restart_at=$call_n
+  fi
+done < "$CALL_LOG"
+(( start_at > 0 && restart_at > start_at )) || fail "a reader start already in progress is restarted only after the wait"
+pass "a reader start already in progress is waited on, then restarted once it is active"
+
+# Idle exit and a wedged stop both report deactivating. A start or a restart
+# would replace that stop. Setup waits past the 3s stop timeout, then restarts.
+CONTROLVAULT_STATUS=0 FPRINTD_STATE=deactivating INSTALLED=$'fprintd\nusbutils\nlibfprint-tod\nlibfprint-2-tod1-broadcom' run_setup
+grep -qx enroll "$CALL_LOG" || fail "a stop already in progress still reaches enrollment"
+if grep -qx 'systemctl start fprintd' "$CALL_LOG"; then
+  fail "a stop already in progress is not replaced with a start"
+fi
+(( $(grep -cx 'systemctl restart fprintd' "$CALL_LOG") == 2 )) || fail "a stop already in progress restarts once the wait is over"
+(( $(grep -cx 'systemctl is-active --quiet fprintd' "$CALL_LOG") == 1 )) || fail "the quiet active check stays the post-list restart guard"
+reads_before_restart=0
+while IFS= read -r line; do
+  [[ $line == 'systemctl restart fprintd' ]] && break
+  [[ $line == 'systemctl is-active fprintd' ]] && reads_before_restart=$((reads_before_restart + 1))
+done < "$CALL_LOG"
+# The first look, then five one-second waits, past the 3s stop timeout.
+(( reads_before_restart == 6 )) || fail "a stop already in progress is waited out before restart" "$reads_before_restart"
+pass "a stop already in progress is waited out, then restarted"
 # A press sensor, such as a Mac's Touch ID, takes a touch per sample, so setup
 # says to lift and touch again; a swipe sensor keeps the moving-finger
 # instruction, and one fprintd can't name is told neither.

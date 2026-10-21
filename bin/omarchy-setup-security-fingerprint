@@ -125,14 +125,42 @@ EOF
   # its bus name, then the open leaves the device half-initialized until a
   # second start. That second restart waits until the daemon is active.
   # Restarting a start still in progress SIGKILLs it after the 3s stop
-  # timeout, in the middle of a firmware write. The list waits out the same
+  # timeout, in the middle of a firmware write. A retry can land in that
+  # window: the job belongs to systemd, so leaving setup does not stop it.
+  # Idle exit passes through deactivating too. The list waits out the same
   # 240s budget, so it does not give up while that first start is running.
   if (( first_start )); then
     echo "Checking the reader. The first time can take a couple of minutes while its firmware updates. Leave the laptop on."
   else
     echo "Checking the reader."
   fi
-  sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
+  # is-active exits nonzero for activating, inactive, and failed alike
+  # (inactive exits 3). The printed name is what distinguishes them.
+  # --quiet would throw that name away, and a later edit that adds it
+  # would restart a firmware write.
+  local state
+  state=$(sudo systemctl is-active fprintd || true)
+  if [[ $state == deactivating ]]; then
+    # A start or a restart would replace this stop. Idle exit uses the same
+    # state, not only a kill. The stop timeout is 3s; wait past it, then
+    # restart even if the name has not changed.
+    local waited=0
+    while [[ $state == deactivating && $waited -lt 5 ]]; do
+      sleep 1
+      state=$(sudo systemctl is-active fprintd || true)
+      waited=$((waited + 1))
+    done
+  fi
+  if [[ $state == activating ]]; then
+    # Join the start already in progress. A restart would stop it, and the
+    # 3s stop timeout would SIGKILL a firmware write.
+    sudo systemctl start fprintd || echo "The reader service is still starting. Enrollment will wait for it."
+  else
+    # active has to be restarted: start would leave the running daemon as it
+    # is, and the open leaves the device half-initialized until a second
+    # start. inactive and failed are not mid-write.
+    sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
+  fi
   timeout 240 fprintd-list "$USER" || true
   if sudo systemctl is-active --quiet fprintd; then
     sudo systemctl restart fprintd || echo "The reader service is still starting. Enrollment will wait for it."
