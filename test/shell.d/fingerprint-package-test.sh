@@ -298,6 +298,54 @@ grep -qx enroll "$CALL_LOG" || fail "ControlVault installation is followed by en
 grep -q 'firmware' "$scratch/output" || fail "ControlVault setup warns that the first open updates firmware"
 pass "a ControlVault 3 machine installs the Broadcom driver and reaches enrollment"
 
+# These two call the setup script directly. run_setup treats a zero exit as
+# failure, and both of these enroll successfully.
+# A ControlVault machine whose platform has no enable-fingerprint hook enrolls
+# without ever running that hook as root. The stock no-hook case above does
+# not enter this branch.
+: > "$CALL_LOG"
+rm -f "$CALL_LOG.dropin" "$CALL_LOG.installed"
+CONTROLVAULT_STATUS=0 ENABLE_HOOK= ENROLL_STATUS=0 VERIFY_STATUS=0 \
+  OMARCHY_PATH="$scratch" "$setup_script" > "$scratch/output" 2>&1 ||
+  fail "a ControlVault machine without a platform hook still sets up"
+assert_controlvault_installs "a ControlVault machine without a platform hook still prepares the reader"
+grep -qx 'resolve enable-fingerprint' "$CALL_LOG" ||
+  fail "a ControlVault machine without a platform hook still asks whether one exists"
+grep -qx enroll "$CALL_LOG" ||
+  fail "a ControlVault machine without a platform hook still enrolls"
+if grep -qx 'dispatch enable-fingerprint' "$CALL_LOG"; then
+  fail "a ControlVault machine without a platform hook never runs it" "$(cat "$CALL_LOG")"
+fi
+pass "a ControlVault machine without a platform hook enrolls without running it"
+
+# When the platform does have a hook, the ControlVault reader is prepared
+# before that hook runs.
+: > "$CALL_LOG"
+rm -f "$CALL_LOG.dropin" "$CALL_LOG.installed"
+CONTROLVAULT_STATUS=0 ENROLL_STATUS=0 VERIFY_STATUS=0 \
+  OMARCHY_PATH="$scratch" "$setup_script" > "$scratch/output" 2>&1 ||
+  fail "a ControlVault machine with a platform hook still sets up"
+assert_controlvault_installs "a ControlVault machine with a platform hook still prepares the reader"
+grep -qx 'dispatch enable-fingerprint' "$CALL_LOG" ||
+  fail "a ControlVault machine with a platform hook runs it"
+list_at=0
+dispatch_at=0
+call_n=0
+while IFS= read -r line; do
+  call_n=$((call_n + 1))
+  if [[ $line == "list" && $list_at == 0 ]]; then
+    list_at=$call_n
+  fi
+  if [[ $line == "dispatch enable-fingerprint" && $dispatch_at == 0 ]]; then
+    dispatch_at=$call_n
+  fi
+done < "$CALL_LOG"
+(( list_at > 0 && dispatch_at > list_at )) ||
+  fail "the ControlVault reader is prepared before the platform hook runs" "list:$list_at dispatch:$dispatch_at"
+grep -qx enroll "$CALL_LOG" ||
+  fail "a ControlVault machine with a platform hook still enrolls"
+pass "a ControlVault machine prepares the reader before running a platform hook"
+
 CONTROLVAULT_STATUS=0 INSTALLED=$'libfprint-git\nfprintd\nusbutils' run_setup
 assert_controlvault_installs "an installed libfprint-git is replaced by the ControlVault driver"
 pass "an installed libfprint-git is replaced by the ControlVault driver"
